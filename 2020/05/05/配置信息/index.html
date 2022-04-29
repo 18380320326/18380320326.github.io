@@ -1,213 +1,304 @@
-
-
 <!DOCTYPE html>
-<html lang="en" color-mode=light>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>主题配置文档 - 只是一个博客</title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="google" content="notranslate" />
-  <meta name="keywords" content=", hexo-theme-zhaoo, zhaoo, hexo, 主题, 配置文档, document, 教程, 指南">
-  <meta name="description" content="zhaoo 主题的使用指南以及配置指北。
-&lt;!–...">
-  <meta name="author" content="Yu Xiong">
-  <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
-  <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" sizes="180x180">
-  <meta rel="mask-icon" href="/images/icons/stun-logo.svg" color="#333333">
-  
-    <meta rel="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
-    <meta rel="msapplication-TileColor" content="#000000">
-  
+<html>
 
-  
-<link rel="stylesheet" href="/css/style.css">
+	<head>
+		
+<title>主题配置文档-Yc</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
 
 
-  
-    
-<link rel="stylesheet" href="https://at.alicdn.com/t/font_1445822_p6ry5n7lrr.css">
+<meta name="keywords" content="Hexo,主题,">
+<meta name="description" content="">
 
-  
 
-  
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<script src="/js/jquery.min.js"></script>
 
-  
 
-  
-    
-      
+	<meta name="generator" content="Hexo 6.1.0"></head>
+
+	<body>
+		
+<link rel="stylesheet" href="/css/page.css">
+
+
+<link rel="stylesheet" href="/css/page_cente.css">
+
+
+<link rel="stylesheet" href="/css/atom-one-dark.css">
+
+
+<link rel="stylesheet" href="/css/header.css">
+
+	<div class="header">
+		<div class="header-top">
+			<div class="h-left">
+				<a href="/">
+					<img src="/image/logo.png">
+				</a>
+			</div>
+			<div class="h-right">
+				<ul>
+					
+						
+								<li>
+									<a href="/">
+										HOME
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/archives">
+										ARCHIVE
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/categories">
+										CATEGORIES
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/tags">
+										TAGS
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/links">
+										LINKS
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/about">
+										ABOUT
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+				</ul>
+			</div>
+			<div class="h-right-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+    <div class="topo">
+        <h2>YUCHENG</h2>
+    </div>
+    <ul>
         
+        <li>
+            <a href="/">HOME</a>
+        </li>
         
-<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css" name="highlight-style" mode="light">
-
-      
+        <li>
+            <a href="/archives">ARCHIVE</a>
+        </li>
         
+        <li>
+            <a href="/categories">CATEGORIES</a>
+        </li>
         
-<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/solarized-dark.min.css" name="highlight-style" mode="dark">
-
-      
-  
-
-  <script>
-    var CONFIG = window.CONFIG || {};
-    var ZHAOO = window.ZHAOO || {};
-    CONFIG = {
-      isHome: false,
-      fancybox: true,
-      pjax: false,
-      loading: {
-        gif: '/images/theme/loading.gif',
-        lottie: ''
-      },
-      lazyload: {
-        enable: true,
-        only_post: 'false',
-        loading: {
-          gif: '/images/theme/loading.gif',
-          lottie: ''
-        }
-      },
-      donate: {
-        enable: true,
-        alipay: 'https://pic.izhaoo.com/alipay.jpg',
-        wechat: 'https://pic.izhaoo.com/wechat.jpg'
-      },
-      galleries: {
-        enable: true
-      },
-      fab: {
-        enable: true,
-        always_show: false
-      },
-      carrier: {
-        enable: true
-      },
-      daovoice: {
-        enable: false
-      },
-      preview: {
-        background: {
-          default: '',
-          api: ''
-        },
-        motto: {
-          default: '我在开了灯的床头下，想问问自己的心啊。',
-          typing: true,
-          api: 'https://v2.jinrishici.com/one.json',
-          data_contents: '["data","content"]'
-        },
-      },
-      qrcode: {
-        enable: true,
-        type: 'url',
-        image: 'https://pic.izhaoo.com/weapp-code.jpg',
-      },
-      toc: {
-        enable: true
-      },
-      scrollbar: {
-        type: 'default'
-      },
-      notification: {
-        enable: false,
-        delay: 4500,
-        list: '',
-        page_white_list: '',
-        page_black_list: ''
-      },
-      search: {
-        enable: false,
-        path: ''
-      }
+        <li>
+            <a href="/tags">TAGS</a>
+        </li>
+        
+        <li>
+            <a href="/links">LINKS</a>
+        </li>
+        
+        <li>
+            <a href="/about">ABOUT</a>
+        </li>
+        
+    </ul>
+    <div class="my_foot">
+        
+        <a target="_blank" rel="noopener" href="https://www.2021chengdu.com/cn/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static/image/dyh/officialLogo.JPG">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://www.gochengdu.cn/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static/image/dyh/gochengdu/logo.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://storybook.js.org/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/storybook.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://stackblitz.com/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/stackblitz.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://code.fun/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/codeFun.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://codepen.io/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/codepen.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://caniuse.com/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/caniuse.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://bit.dev/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/bitDev.png">
+        </a>
+        
+    </div>
+</div>
+<div class='shelter'
+    style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'>
+</div>
+<style>
+    .sidebar {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 999;
+        text-align: center;
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815)
     }
-  </script>
 
-  
+    .topo {
+        width: 100%;
+        height: 200px;
+        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end
+    }
 
-  
+    .topo h2 {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        margin: 0 0 10px 10px;
+        font-size: 1.2em;
+        box-sizing: border-box
+    }
 
-<meta name="generator" content="Hexo 6.1.0"></head>
+    .topo:before {
+        content: '';
+        background-image: url(/image/pattern.png);
+        background-repeat: repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
 
-<body class="lock-screen">
-  <div class="loading" id="loading"></div>
-  
-    
+    .sidebar ul {
+        width: 100%;
+        margin-top: 50px
+    }
 
+    .sidebar ul li {
+        height: 50px;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: right;
+        margin-right: 10px
+    }
 
-  <nav class="navbar">
-    <div class="left">
-      
-        <i class="iconfont iconhome j-navbar-back-home"></i>
-      
-      
-        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
-      
-      
-        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
-      
-      
+    .sidebar ul li a {
+        display: grid;
+        color: #5d606a;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-decoration: none
+    }
+
+    .my_foot {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0
+    }
+
+    .my_foot a {
+        text-decoration: none;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .my_foot a img {
+        width: 30px;
+        height: 30px
+    }
+</style>
+
+<script>
+    $(function () { $('.h-right-close>svg').click(function () { $('.sidebar').animate({ width: "66%" }, 500); $('.shelter').fadeIn("slow") }); $('.shelter').click(function (e) { $('.sidebar').animate({ width: "0" }, 500); $('.shelter').fadeOut("slow") }) })
+</script>
+		<script>
+			$(function () { $(window).scroll(function () { if ($(document).scrollTop() > 100) { $(".header-top").removeClass("header-move2"); $('.header-top').addClass('header-move1') } else { $(".header-top").removeClass("header-move1"); $('.header-top').addClass('header-move2') } }) });
+		</script>
+<div class="header-bg ">
+    <div class="bg-content">
+        <ul class="tag">
+            
+            
+            <li><a href="/tags/Hexo">Hexo</a></li>
+            
+            <li><a href="/tags/主题">主题</a></li>
+            
+            
+        </ul>
+        <h1>主题配置文档</h1>
+        <div class="article-info">
+            <div class="article-author">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <g>
+                        <path fill="#12183A"
+                            d="M6.187 15.265A6.47 6.47 0 0 0 10 16.5a6.47 6.47 0 0 0 3.813-1.235A4.99 4.99 0 0 0 10 13.5a4.99 4.99 0 0 0-3.813 1.765zM5.082 14.25A6.485 6.485 0 0 1 10 12c1.965 0 3.726.872 4.918 2.25a6.5 6.5 0 1 0-9.836 0zM10 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                        </path>
+                    </g>
+                </svg>
+                
+                <span> <a href="">YUCHENG</a></span>
+                <p>2020-05-05 09:29:54</p>
+            </div>
+        </div>
     </div>
-    <div class="center">主题配置文档</div>
-    <div class="right">
-      <i class="iconfont iconmenu j-navbar-menu"></i>
-    </div>
-    
-      <div id="qrcode-navbar"></div>
-    
-  </nav>
-
-  
-  
-
-<nav class="menu">
-  <div class="menu-container">
-    <div class="menu-close">
-      <i class="iconfont iconbaseline-close-px"></i>
-    </div>
-    <ul class="menu-content"><li class="menu-item">
-        <a href="/ " class="underline "> 首页</a>
-      </li><li class="menu-item">
-        <a href="/galleries/ " class="underline "> 摄影</a>
-      </li><li class="menu-item">
-        <a href="/archives/ " class="underline "> 归档</a>
-      </li><li class="menu-item">
-        <a href="/tags/ " class="underline "> 标签</a>
-      </li><li class="menu-item">
-        <a href="/categories/ " class="underline "> 分类</a>
-      </li><li class="menu-item">
-        <a href="/about/ " class="underline "> 关于</a>
-      </li></ul>
-    
-      <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
-    
-  </div>
-</nav>
-  <main id="main">
-  <div class="article-wrap">
-    <div class="row container">
-      <div class="col-xl-3"></div>
-      <div class="col-xl-6"><article class="article">
-  <div class="wrap">
-    <section class="head">
-  <img   class="lazyload" data-original="https://pic.izhaoo.com/20200421200902.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
-  <div class="head-mask">
-    <h1 class="head-title">主题配置文档</h1>
-    <div class="head-info">
-      <span class="post-info-item"><i class="iconfont iconcalendar"></i>May 05, 2020</span>
-      
-      <span class="post-info-item"><i class="iconfont iconfont-size"></i>18358</span>
-    </div>
-  </div>
-</section>
-    <section class="main">
-      <section class="content">
-        
+</div>
+<div class="article-content">
+    <div id="article" class="content">
         <p><code>zhaoo</code> 主题的使用指南以及配置指北。</p>
 <p>&lt;!– more –&gt;</p>
 <h2 id="关于文档"><a href="#关于文档" class="headerlink" title="关于文档"></a>关于文档</h2><p>&gt; 如有疑惑欢迎加鹅群咨询：<strong>550262893</strong><br>&gt; 约定：无特殊说明时，文中“博客配置”指 <code>/_config.yml</code>，“主题配置”指 <code>/theme/hexo-theme-zhaoo/_config.yml</code>，缺省为“主题配置”。</p>
@@ -341,7 +432,7 @@
 <ul>
 <li><code>enable</code>: <em>开启</em> &#x2F; <em>关闭</em> 哀悼模式。</li>
 </ul>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20201016102727.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">哀悼</span></p>
+<p><img  src="https://pic.izhaoo.com/20201016102727.jpg"  ><span class="image-caption">哀悼</span></p>
 <h2 id="文章配置"><a href="#文章配置" class="headerlink" title="文章配置"></a>文章配置</h2><h3 id="文章封面"><a href="#文章封面" class="headerlink" title="文章封面"></a>文章封面</h3><h4 id="单独封面"><a href="#单独封面" class="headerlink" title="单独封面"></a>单独封面</h4><p>可以为每篇文章设置单独的文章封面图片，在文章 <code>Front-matter</code> 中添加 <code>image</code> 字段设置图片。</p>
 <p>若使用图床，直接添加图片文件的 <strong>完整URL</strong> 即可：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题文档</span><br><span class="line"><span class="section">image: https://pic.izhaoo.com/20200421200902.jpg  #设置图床图片</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
@@ -406,8 +497,8 @@
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: zhaoo - 主题文档</span><br><span class="line"><span class="section">copyright: false # 关闭文章版权</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="文章搬运"><a href="#文章搬运" class="headerlink" title="文章搬运"></a>文章搬运</h3><p>配置项 <code>carrier</code> 用于开启 <strong>文章搬运</strong> 功能，方便博主们全文“借鉴”文章，效果如下：</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200727125519.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">文章搬运</span></p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200727125724.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">弹窗提示</span></p>
+<p><img  src="https://pic.izhaoo.com/20200727125519.jpg"  ><span class="image-caption">文章搬运</span></p>
+<p><img  src="https://pic.izhaoo.com/20200727125724.jpg"  ><span class="image-caption">弹窗提示</span></p>
 <p>前置条件：全局开启 <a href="#%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83">文章版权</a></p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Carrier</span></span><br><span class="line"><span class="attr">carrier:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">markdown</span> <span class="comment"># markdown html text</span></span><br></pre></td></tr></table></figure>
 
@@ -468,10 +559,10 @@
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 记事  #名称也需要对应</span><br><span class="line"><span class="section">layout: &amp;#34;gallery&amp;#34;</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
 
 <p>步骤可能有点难以理解，最后放几张截图，比较直观：</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200722185650.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">gallery-1</span></p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200722185721.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">gallery-2</span></p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200722185814.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">gallery-3</span></p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200722185829.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">gallery-4</span></p>
+<p><img  src="https://pic.izhaoo.com/20200722185650.jpg"  ><span class="image-caption">gallery-1</span></p>
+<p><img  src="https://pic.izhaoo.com/20200722185721.jpg"  ><span class="image-caption">gallery-2</span></p>
+<p><img  src="https://pic.izhaoo.com/20200722185814.jpg"  ><span class="image-caption">gallery-3</span></p>
+<p><img  src="https://pic.izhaoo.com/20200722185829.jpg"  ><span class="image-caption">gallery-4</span></p>
 <p>也可以参考 <code>/_example/source</code> 中的相关栗子。</p>
 <h3 id="归档页面"><a href="#归档页面" class="headerlink" title="归档页面"></a>归档页面</h3><p>参考 <a href="#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">导航菜单</a> 设置归档页面的导航，系统会按文章创建时间自动归档。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives</span> <span class="string">||</span> <span class="string">归档</span></span><br></pre></td></tr></table></figure>
@@ -520,11 +611,11 @@
 <li><code>button</code>: <em>显示</em> &#x2F; <em>隐藏</em> 评论按钮，隐藏按钮后将直接展示评论。</li>
 </ul>
 <h4 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h4><p><strong>Gitalk</strong> 基于 <code>GitHub</code> 存储评论内容，优点是支持 <code>GitHub</code> 直接登录；缺点是需要 <strong>科学上网</strong> 才能访问，水土不服。</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/2020111982651.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">Gitalk演示</span></p>
+<p><img  src="https://pic.izhaoo.com/2020111982651.jpg"  ><span class="image-caption">Gitalk演示</span></p>
 <p>首先需要在 <a target="_blank" rel="noopener" href="https://github.com/new">GitHub</a> 创建一个仓库，如有 <code>GitHub Pages</code> 也可以共用一个仓库。</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/202011193006.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">创建仓库</span></p>
+<p><img  src="https://pic.izhaoo.com/202011193006.jpg"  ><span class="image-caption">创建仓库</span></p>
 <p>接着创建一个 <a target="_blank" rel="noopener" href="https://github.com/settings/applications/new">Github Application</a>，填写相应的参数。创建完成后会生成 <code>clientID</code> 和 <code>clientSecret</code>，记录一下。</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20201119203435.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">创建应用</span></p>
+<p><img  src="https://pic.izhaoo.com/20201119203435.png"  ><span class="image-caption">创建应用</span></p>
 <p>配置项 <code>gitalk</code> 用于配置 <code>Gitalk。</code></p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Gitalk</span></span><br><span class="line"><span class="attr">gitalk:</span></span><br><span class="line">  <span class="attr">owner:</span></span><br><span class="line">  <span class="attr">repo:</span></span><br><span class="line">  <span class="attr">admin:</span></span><br><span class="line">  <span class="attr">clientID:</span></span><br><span class="line">  <span class="attr">clientSecret:</span></span><br></pre></td></tr></table></figure>
 
@@ -536,7 +627,7 @@
 <li><code>clientSecret</code>: 应用创建后生成。</li>
 </ul>
 <h4 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h4><p><code>Valine</code> 是基于 <a target="_blank" rel="noopener" href="https://leancloud.cn/">LeanCloud</a> 实现的评论系统，小清新风格。</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/2020111980022.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">Valine演示</span></p>
+<p><img  src="https://pic.izhaoo.com/2020111980022.jpg"  ><span class="image-caption">Valine演示</span></p>
 <p>首先在 <a target="_blank" rel="noopener" href="https://leancloud.cn/">LeanCloud</a> 注册一个账号，并创建一个应用（开发版）。</p>
 <p>进入应用管理界面，点击【存储】-&gt;【创建Class】，名称为 <strong>Comment</strong>，访问权限为 <strong>所有用户</strong>，写入权限为 <strong>限制写入</strong>。</p>
 <p>在【设置】-&gt;【应用Keys】中复制 <code>appId</code> 和 <code>appKey</code>。</p>
@@ -553,7 +644,7 @@
 </ul>
 <p>&gt; <a target="_blank" rel="noopener" href="https://valine.js.org/">Valine</a></p>
 <h4 id="畅言"><a href="#畅言" class="headerlink" title="畅言"></a>畅言</h4><p><strong>畅言</strong> 是搜狐家的评论系统，优点是支持 <code>QQ</code>、<code>手机</code>、<code>邮箱</code> 等多种登录方式，接地气；个人感觉 <code>UI</code> 不是我的菜。 </p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/2020111984224.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">畅言演示</span></p>
+<p><img  src="https://pic.izhaoo.com/2020111984224.jpg"  ><span class="image-caption">畅言演示</span></p>
 <p>在 <a target="_blank" rel="noopener" href="http://changyan.kuaizhan.com/">畅言</a> 注册账号，进入后台创建一个站点，在【后台总览】记录一下 <code>APP ID</code> 和 <code>APP KEY</code>。</p>
 <p>配置项 <code>changyan</code> 用于设置 <code>畅言评论</code>。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ChangYan</span></span><br><span class="line"><span class="attr">changyan:</span></span><br><span class="line">  <span class="attr">appId:</span></span><br><span class="line">  <span class="attr">conf:</span></span><br></pre></td></tr></table></figure>
@@ -564,13 +655,13 @@
 </ul>
 <p>畅言的相关配置在【管理后台】设置，可参考官方文档进行配置。</p>
 <h3 id="客户沟通-DaoVoice"><a href="#客户沟通-DaoVoice" class="headerlink" title="客户沟通 (DaoVoice)"></a>客户沟通 (DaoVoice)</h3><p><a target="_blank" rel="noopener" href="http://www.daovoice.io/">DaoVoice</a> 是一款客户沟通插件，支持即时通讯、留言等形式反馈消息。</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200808141245.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">DaoVoice演示</span></p>
+<p><img  src="https://pic.izhaoo.com/20200808141245.jpg"  ><span class="image-caption">DaoVoice演示</span></p>
 <p>因为官方的 <code>Fab</code> 按钮 和 主题 <code>Fab</code> 按钮会重叠，所以作者同学把他集成到主题 <code>Fab</code> 中了。</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200808141349.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">官网Fab</span></p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200808141304.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">主题Fab</span></p>
+<p><img  src="https://pic.izhaoo.com/20200808141349.jpg"  ><span class="image-caption">官网Fab</span></p>
+<p><img  src="https://pic.izhaoo.com/20200808141304.jpg"  ><span class="image-caption">主题Fab</span></p>
 <p>首先在 <a target="_blank" rel="noopener" href="http://dashboard.daovoice.io/">DaoVoice</a> 官网上注册一个账号。</p>
 <p>在【安装应用】页面，复制 <code>app_id</code>。</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/20200808135815.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">appid</span></p>
+<p><img  src="https://pic.izhaoo.com/20200808135815.jpg"  ><span class="image-caption">appid</span></p>
 <p>配置项 <code>daovoice</code> 配置应用。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Daovoice</span></span><br><span class="line"><span class="attr">daovoice:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">appId:</span> <span class="string">abcdefg</span>  <span class="comment">#你的 app_id</span></span><br></pre></td></tr></table></figure>
 
@@ -591,7 +682,7 @@
 <h3 id="页面统计-LeanCloud"><a href="#页面统计-LeanCloud" class="headerlink" title="页面统计 (LeanCloud)"></a>页面统计 (LeanCloud)</h3><p><strong>LeanCloud</strong> 是一款 <code>ServerLess</code> 服务，主题中被用来统计每个页面的访问量，并在页面中展示。</p>
 <p>首先在 <a target="_blank" rel="noopener" href="https://leancloud.cn/">LeanCloud</a> 注册一个账号，并创建一个应用（开发版）。</p>
 <p>进入应用管理界面，点击【存储】-&gt;【创建Class】，名称为 <strong>Counter</strong>，访问权限为 <strong>所有用户</strong>，写入权限为 <strong>限制写入</strong>，如下：</p>
-<p><img    class="lazyload" data-original="https://pic.izhaoo.com/202011194911.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">创建LeanCloud</span></p>
+<p><img  src="https://pic.izhaoo.com/202011194911.jpg"  ><span class="image-caption">创建LeanCloud</span></p>
 <p>在【设置】-&gt;【应用Keys】中复制 <code>appId</code> 和 <code>appKey</code>。</p>
 <p>配置项 <code>leancloud</code> 用于设置 <code>LeanCloud</code>。</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># LeanCloud</span></span><br><span class="line"><span class="attr">leancloud:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">appId:</span></span><br><span class="line">  <span class="attr">appKey:</span></span><br><span class="line">  <span class="attr">serverURLs:</span> <span class="string">https://leancloud.cn/</span></span><br></pre></td></tr></table></figure>
@@ -659,626 +750,155 @@
 <li><code>js</code>: 外部引入的 <code>JS</code> 链接。” class&#x3D;”j-carrier-data carrier-data”&gt;</li>
 </ul>
 
-      </section>
-      <section class="extra">
-        
-          <ul class="copyright">
-  
-    <li><strong>版权声明：</strong>本文作者放弃了版权，大家随意搬运，特此奉上搬运链接：<a href="javascript:;" class="j-carrier-btn">一键打包带走</a></li>
-    <input value="&lt;p&gt;&lt;code&gt;zhaoo&lt;/code&gt; 主题的使用指南以及配置指北。&lt;/p&gt;
-&lt;p&gt;&amp;lt;!– more –&amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;关于文档&#34;&gt;&lt;a href=&#34;#关于文档&#34; class=&#34;headerlink&#34; title=&#34;关于文档&#34;&gt;&lt;/a&gt;关于文档&lt;/h2&gt;&lt;p&gt;&amp;gt; 如有疑惑欢迎加鹅群咨询：&lt;strong&gt;550262893&lt;/strong&gt;&lt;br&gt;&amp;gt; 约定：无特殊说明时，文中“博客配置”指 &lt;code&gt;/_config.yml&lt;/code&gt;，“主题配置”指 &lt;code&gt;/theme/hexo-theme-zhaoo/_config.yml&lt;/code&gt;，缺省为“主题配置”。&lt;/p&gt;
-&lt;p&gt;&amp;lt;p style&amp;#x3D;&amp;amp;#34;text-align: right;&amp;amp;#34;&amp;gt;文档更新于：2021年4月4日&amp;lt;&amp;#x2F;p&amp;gt;&lt;/p&gt;
-&lt;h2 id=&#34;快速开始&#34;&gt;&lt;a href=&#34;#快速开始&#34; class=&#34;headerlink&#34; title=&#34;快速开始&#34;&gt;&lt;/a&gt;快速开始&lt;/h2&gt;&lt;h3 id=&#34;主题安装&#34;&gt;&lt;a href=&#34;#主题安装&#34; class=&#34;headerlink&#34; title=&#34;主题安装&#34;&gt;&lt;/a&gt;主题安装&lt;/h3&gt;&lt;p&gt;安装 &lt;code&gt;Hexo&lt;/code&gt; 后进入根目录：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; hexo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;安装 &lt;code&gt;zhaoo&lt;/code&gt; 主题：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ git &lt;span class=&#34;built_in&#34;&gt;clone&lt;/span&gt; https://github.com/izhaoo/hexo-theme-zhaoo.git themes/zhaoo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;开启主题&#34;&gt;&lt;a href=&#34;#开启主题&#34; class=&#34;headerlink&#34; title=&#34;开启主题&#34;&gt;&lt;/a&gt;开启主题&lt;/h3&gt;&lt;p&gt;修改 &lt;code&gt;Hexo&lt;/code&gt; 根目录下的 &lt;code&gt;_config.yml&lt;/code&gt; 文件启用 &lt;code&gt;zhaoo&lt;/code&gt; 主题：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;theme:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;zhaoo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;启动 &lt;code&gt;Hexo&lt;/code&gt; 服务器预览：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo clean &amp;amp;amp;&amp;amp;amp; hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;博客配置&#34;&gt;&lt;a href=&#34;#博客配置&#34; class=&#34;headerlink&#34; title=&#34;博客配置&#34;&gt;&lt;/a&gt;博客配置&lt;/h3&gt;&lt;p&gt;编辑 &lt;code&gt;Hexo&lt;/code&gt; 根目录下的 &lt;code&gt;_config.yml&lt;/code&gt; 文件，配置博客网站相关功能，对整个网站生效。&lt;/p&gt;
-&lt;p&gt;建议将文章数量改为&lt;strong&gt;9&lt;/strong&gt;篇：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;index_generator:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;path:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;per_page:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#文章数量改为9篇（3的倍数更和谐）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;order_by:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;-date&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;启用代码高亮效果：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;highlight:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#启用代码高亮效果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;line_number:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;auto_detect:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;hljs:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tab_replace:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;编辑 &lt;code&gt;zhaoo&lt;/code&gt; 主题目录下的 &lt;code&gt;_config.yml&lt;/code&gt; 文件，配置主题相关功能，只对主题生效。&lt;/p&gt;
-&lt;p&gt;建议参考 &lt;a href=&#34;https://github.com/izhaoo/hexo-theme-zhaoo/blob/master/_config.yml&#34;&gt;_config.yml&lt;/a&gt; 和本文进行配置，具体配置内容见下文。&lt;/p&gt;
-&lt;h3 id=&#34;主题更新&#34;&gt;&lt;a href=&#34;#主题更新&#34; class=&#34;headerlink&#34; title=&#34;主题更新&#34;&gt;&lt;/a&gt;主题更新&lt;/h3&gt;&lt;p&gt;进入到 &lt;code&gt;zhaoo&lt;/code&gt; 主题目录：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ &lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; themes/zhaoo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;从 &lt;code&gt;GitHub&lt;/code&gt; 获取更新：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ git pull&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;全局配置&#34;&gt;&lt;a href=&#34;#全局配置&#34; class=&#34;headerlink&#34; title=&#34;全局配置&#34;&gt;&lt;/a&gt;全局配置&lt;/h2&gt;&lt;h3 id=&#34;头部导航-NavBar&#34;&gt;&lt;a href=&#34;#头部导航-NavBar&#34; class=&#34;headerlink&#34; title=&#34;头部导航 (NavBar)&#34;&gt;&lt;/a&gt;头部导航 (NavBar)&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;navbar&lt;/code&gt; 用于设置 &lt;strong&gt;头部导航条&lt;/strong&gt;。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;navbar:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;back_home:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;code&gt;enable&lt;/code&gt; 用于控制头部导航条全局显示&amp;#x2F;隐藏。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;back_home&lt;/code&gt; 用于开启返回首页按钮；其余的功能按钮随各自配置开启，例如“二维码”、“黑夜模式”、“搜索”等。&lt;/p&gt;
-&lt;h3 id=&#34;导航菜单-Menu&#34;&gt;&lt;a href=&#34;#导航菜单-Menu&#34; class=&#34;headerlink&#34; title=&#34;导航菜单 (Menu)&#34;&gt;&lt;/a&gt;导航菜单 (Menu)&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;menu&lt;/code&gt; 用于设置 &lt;strong&gt;导航菜单&lt;/strong&gt;。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Menu&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;home:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;首页&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;galleries:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/galleries&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;摄影&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;archives:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/archives&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;归档&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tags:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/tags&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;标签&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;categories:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/categories&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;分类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;about:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/about&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;关于&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;用 &lt;strong&gt;||&lt;/strong&gt; 将内容分割为两部分，前面部分为页面 &lt;code&gt;URL&lt;/code&gt;，后面部分为菜单中显示的名称。&lt;/p&gt;
-&lt;p&gt;对于系统默认页面，如 &lt;code&gt;归档（/archives）&lt;/code&gt;、&lt;code&gt;首页（/）&lt;/code&gt; 等，直接添加菜单即可；对于独立页面，如 &lt;code&gt;标签（tags）&lt;/code&gt;、&lt;code&gt;分类（categories）&lt;/code&gt;，则需先创建页面后再添加菜单。&lt;/p&gt;
-&lt;h3 id=&#34;主题颜色&#34;&gt;&lt;a href=&#34;#主题颜色&#34; class=&#34;headerlink&#34; title=&#34;主题颜色&#34;&gt;&lt;/a&gt;主题颜色&lt;/h3&gt;&lt;p&gt;可以根据个人喜好，定制主题颜色。在配置项 &lt;code&gt;color&lt;/code&gt; 中设置颜色。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Color&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;color:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;text:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#33333D&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;text-secondary:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#4e4e4e&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;text-third:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#999999&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;background:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#ffffff&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;background-secondary:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#f6f8fa&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;border:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#eeeeee&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;text-dark:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#dddddd&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;text-secondary-dark:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#9899ab&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;text-third-dark:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#7d8594&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;background-dark:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#1e2128&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;background-secondary-dark:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#1a1d22&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;border-dark:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#2b3038&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;link:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#FF3B00&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;可以使用 &lt;code&gt;十六进制&lt;/code&gt;、&lt;code&gt;rgba&lt;/code&gt;、&lt;code&gt;颜色名称&lt;/code&gt; 方式，注意需要用引号包裹。&lt;/p&gt;
-&lt;p&gt;目前有两套颜色模式，分别是 &lt;strong&gt;浅色模式（白天）&lt;/strong&gt; 和 &lt;strong&gt;深色模式（黑夜）&lt;/strong&gt;，请注意颜色搭配。&lt;code&gt;link&lt;/code&gt; 为强调色，表现为 &lt;code&gt;hover&lt;/code&gt;、&lt;code&gt;active&lt;/code&gt; 等。&lt;/p&gt;
-&lt;p&gt;分享几个配色网站：&lt;a href=&#34;https://colors.ichuantong.cn/&#34;&gt;中国传统颜色&lt;/a&gt;、&lt;a href=&#34;https://nipponcolors.com/&#34;&gt;日本传统颜色&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;站点图标&#34;&gt;&lt;a href=&#34;#站点图标&#34; class=&#34;headerlink&#34; title=&#34;站点图标&#34;&gt;&lt;/a&gt;站点图标&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;favicon&lt;/code&gt; 可设置站点图标，建议使用 &lt;code&gt;ico&lt;/code&gt; 或 &lt;code&gt;png&lt;/code&gt; 格式。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Favicon&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;favicon:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;small:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/icons/favicon-16x16.png&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;medium:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/icons/favicon-32x32.png&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;apple_touch_icon:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/icons/apple-touch-icon.png&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;safari_pinned_tab:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/icons/stun-logo.svg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;msapplication:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/icons/favicon-144x144.png&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;有多种尺寸的图片需要配置，可以参考默认图标的尺寸用 &lt;code&gt;PS&lt;/code&gt; 裁剪，或使用：&lt;a href=&#34;https://icon.wuruihong.com/&#34;&gt;图标工厂&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;全局字体&#34;&gt;&lt;a href=&#34;#全局字体&#34; class=&#34;headerlink&#34; title=&#34;全局字体&#34;&gt;&lt;/a&gt;全局字体&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;font&lt;/code&gt; 中可设置全局字体的 &lt;strong&gt;大小&lt;/strong&gt; 和 &lt;strong&gt;风格系列&lt;/strong&gt;。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Font&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;font:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;size:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;14px&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;family:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;Hiragino&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Sans&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;GB&amp;amp;#39;,&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;Hiragino&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Sans&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;GB&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;W3&amp;amp;#39;,&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;Microsoft&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;YaHei&amp;amp;#39;,&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;WenQuanYi&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Micro&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Hei&amp;amp;#39;,&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;sans-serif&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;size&lt;/code&gt;: 字体大小。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;family&lt;/code&gt;: 字体风格系列。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;背景图片&#34;&gt;&lt;a href=&#34;#背景图片&#34; class=&#34;headerlink&#34; title=&#34;背景图片&#34;&gt;&lt;/a&gt;背景图片&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;background_image&lt;/code&gt; 可设置背景图片，直接填写图片地址即可。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Background Image&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;background_image:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;tips: 建议不设置背景图片，默认的 &lt;strong&gt;纯白背景&lt;/strong&gt; 最搭配，背景颜色也可在 &lt;a href=&#34;#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2&#34;&gt;主题颜色&lt;/a&gt; 中设置。&lt;/p&gt;
-&lt;h3 id=&#34;加载动画-Loading&#34;&gt;&lt;a href=&#34;#加载动画-Loading&#34; class=&#34;headerlink&#34; title=&#34;加载动画 (Loading)&#34;&gt;&lt;/a&gt;加载动画 (Loading)&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;loading&lt;/code&gt; 可设置载入动画，会在 &lt;em&gt;页面跳转&lt;/em&gt;、&lt;em&gt;懒加载&lt;/em&gt; 时加载，目前仅支持图片形式。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Loading&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;loading:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/theme/loading.gif&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;建议使用 &lt;code&gt;gif&lt;/code&gt; 动图，可在 &lt;a href=&#34;https://lottiefiles.com/&#34;&gt;LottieFiles&lt;/a&gt; 下载。&lt;/p&gt;
-&lt;p&gt;tips: 未来将支持自定义 &lt;code&gt;css&lt;/code&gt;、&lt;code&gt;svg&lt;/code&gt; 等多种方式的载入动画，敬请期待。&lt;/p&gt;
-&lt;h3 id=&#34;欢迎页面&#34;&gt;&lt;a href=&#34;#欢迎页面&#34; class=&#34;headerlink&#34; title=&#34;欢迎页面&#34;&gt;&lt;/a&gt;欢迎页面&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;preview&lt;/code&gt; 中的一些列配置可自定义欢迎页面。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Preview&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;preview:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;model:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;wave&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# wave cloud&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;background:&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;type:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;image&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# image video&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;default_image:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;light:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/theme/welcome-image.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;dark:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/theme/welcome-image.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;video:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;api:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# https://source.unsplash.com/random/1920x1080&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;size:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;cover&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# css: background-size&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;position:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;center&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# css: background-position&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;motto:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;default:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;我在开了灯的床头下，想问问自己的心啊。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;api:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://v1.hitokoto.cn/?encode=text&amp;amp;amp;c=j&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;color:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#ffffff&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: 用来 &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 欢迎页面。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;效果模式&#34;&gt;&lt;a href=&#34;#效果模式&#34; class=&#34;headerlink&#34; title=&#34;效果模式&#34;&gt;&lt;/a&gt;效果模式&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;model&lt;/code&gt;: 设置效果模式，有 *&lt;strong&gt;波浪（wave）&lt;/strong&gt; 和 &lt;strong&gt;云层（cloud）&lt;/strong&gt; 两种模式可选择。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;欢迎图片&#34;&gt;&lt;a href=&#34;#欢迎图片&#34; class=&#34;headerlink&#34; title=&#34;欢迎图片&#34;&gt;&lt;/a&gt;欢迎图片&lt;/h4&gt;&lt;p&gt;配置项 &lt;code&gt;background&lt;/code&gt; 用来设置欢迎图片，其中：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;type&lt;/code&gt;: 图片或视频。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;default_image&lt;/code&gt;: 配置静态图片，填写静态图片 &lt;code&gt;URL&lt;/code&gt; 即可。开启 &lt;a href=&#34;#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F&#34;&gt;深色模式&lt;/a&gt; 后支持配置 深色&amp;#x2F;浅色 两种模式下的背景图片。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;video&lt;/code&gt;: 配置动态视频，填写视频 &lt;code&gt;URL&lt;/code&gt; 即可。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;api&lt;/code&gt;: 配置随机图片，可使用第三方 &lt;code&gt;API&lt;/code&gt;，优先级 &lt;em&gt;随机图片（api）&lt;/em&gt; &amp;gt; &lt;em&gt;静态图片（default）&lt;/em&gt;。推荐 &lt;code&gt;API&lt;/code&gt;：&lt;a href=&#34;https://source.unsplash.com/random/1920x1080&#34;&gt;Unsplash&lt;/a&gt;、&lt;a href=&#34;https://api.vvhan.com/api/bing?type=sj&#34;&gt;必应图片&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;size&lt;/code&gt; 和 &lt;code&gt;position&lt;/code&gt;: 设置图片的 &lt;strong&gt;尺寸&lt;/strong&gt; 和 &lt;strong&gt;位置&lt;/strong&gt;，参考 &lt;code&gt;CSS&lt;/code&gt; 中的属性即可。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;格言&#34;&gt;&lt;a href=&#34;#格言&#34; class=&#34;headerlink&#34; title=&#34;格言&#34;&gt;&lt;/a&gt;格言&lt;/h4&gt;&lt;p&gt;配置项 &lt;code&gt;motto&lt;/code&gt; 用来设置格言，其中：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;default&lt;/code&gt;: 配置静态格言，填写格言文本即可。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;api&lt;/code&gt;: 配置随机格言，可使用第三方 &lt;code&gt;API&lt;/code&gt;，优先级 &lt;em&gt;随机格言（api）&lt;/em&gt; &amp;gt; &lt;em&gt;静态格言（default）&lt;/em&gt;。推荐 &lt;code&gt;API&lt;/code&gt;：&lt;a href=&#34;https://hitokoto.cn/&#34;&gt;一言&lt;/a&gt;、&lt;a href=&#34;https://www.jinrishici.com/&#34;&gt;今日诗词&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;color&lt;/code&gt; 配置文字颜色。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;全局搜索&#34;&gt;&lt;a href=&#34;#全局搜索&#34; class=&#34;headerlink&#34; title=&#34;全局搜索&#34;&gt;&lt;/a&gt;全局搜索&lt;/h3&gt;&lt;p&gt;前置条件：需要开启&lt;a href=&#34;#%E5%A4%B4%E9%83%A8%E5%AF%BC%E8%88%AA&#34;&gt;头部导航&lt;/a&gt;，否则会找不到入口滴。&lt;/p&gt;
-&lt;p&gt;目前仅支持静态搜索能力（渲染时生成搜索索引文件），需要安装 &lt;a href=&#34;https://github.com/theme-next/hexo-generator-searchdb&#34;&gt;hexo-generator-searchdb&lt;/a&gt; 插件提供支持。&lt;/p&gt;
-&lt;p&gt;安装 &lt;code&gt;hexo-generator-searchdb&lt;/code&gt; 插件：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ npm install hexo-generator-searchdb --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;开启插件，在 &lt;strong&gt;博客配置&lt;/strong&gt; 下新增：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;search:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;path:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/search.xml&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 索引生成路径（需要设置绝对路径，否则二级页面读不到）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;field:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;post&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# post page all&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;format:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;html&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 只支持 html 类型&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;content:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 是否包含正文内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;版权信息&#34;&gt;&lt;a href=&#34;#版权信息&#34; class=&#34;headerlink&#34; title=&#34;版权信息&#34;&gt;&lt;/a&gt;版权信息&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;copyright&lt;/code&gt; 用来设置页面底部显示的网站版权信息，填写 &lt;strong&gt;文本内容&lt;/strong&gt; 或 &lt;strong&gt;HTML&lt;/strong&gt; 即可。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Copyright&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;copyright:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;lt;p&amp;amp;gt;Powered&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;by&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;lt;a&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;target=&amp;amp;#34;_blank&amp;amp;#34;&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;href=&amp;amp;#34;https://hexo.io&amp;amp;#34;&amp;amp;gt;Hexo&amp;amp;lt;/a&amp;amp;gt;&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;|&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;Theme&lt;/span&gt; &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;lt;a&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;target=&amp;amp;#34;_blank&amp;amp;#34;&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;href=&amp;amp;#34;https://github.com/izhaoo/hexo-theme-zhaoo&amp;amp;#34;&amp;amp;gt;zhaoo&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/p&amp;amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;社交链接&#34;&gt;&lt;a href=&#34;#社交链接&#34; class=&#34;headerlink&#34; title=&#34;社交链接&#34;&gt;&lt;/a&gt;社交链接&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;social&lt;/code&gt; 用来配置社交链接，在页面底部以 &lt;code&gt;Icon&lt;/code&gt; 图标的形式展示，点击即可链接第三方平台。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Social&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;social:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;qq:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;tencent://message/?Menu=yes&amp;amp;amp;uin=894519210&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;iconQQ&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#12B7F5&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;wechat:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;javascript:;&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;iconwechat-fill&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#09BB07&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;instagram:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://www.instagram.com/izhaoo/&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;iconinstagram&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#DA2E76&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;github:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://github.com/izhaoo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;icongithub-fill&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;#24292E&amp;amp;#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;email:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;mailto:izhaoo@163.com&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;iconmail&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;配置内容分为三部分，以 &lt;code&gt;||&lt;/code&gt; 划分。第一部分是 &lt;em&gt;社交链接&lt;/em&gt; ，第二部分是 &lt;em&gt;图标样式（IconFont）&lt;/em&gt; ，第三部分是 &lt;em&gt;选中颜色（hover）&lt;/em&gt;。&lt;/p&gt;
-&lt;h3 id=&#34;右下角按钮-Fab&#34;&gt;&lt;a href=&#34;#右下角按钮-Fab&#34; class=&#34;headerlink&#34; title=&#34;右下角按钮 (Fab)&#34;&gt;&lt;/a&gt;右下角按钮 (Fab)&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;fab&lt;/code&gt; 用于配置右下角的按钮。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Fab (Float Action Button)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;fab:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;always_show:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: 设置 &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 按钮。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;always_show&lt;/code&gt;: 设置 &lt;em&gt;一直显示&lt;/em&gt; &amp;#x2F; &lt;em&gt;过渡隐藏&lt;/em&gt; 按钮。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;二维码&#34;&gt;&lt;a href=&#34;#二维码&#34; class=&#34;headerlink&#34; title=&#34;二维码&#34;&gt;&lt;/a&gt;二维码&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;qrcode&lt;/code&gt; 用来设置 &lt;strong&gt;二维码&lt;/strong&gt;，开启后点击 &lt;strong&gt;导航栏&lt;/strong&gt; 左侧的图标即可显示。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# QR Code&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;qrcode:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;type:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;image&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# url image&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;image:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://pic.izhaoo.com/weapp-code.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: 设置 &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 二维码功能。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;type&lt;/code&gt;: 设置二维码模式，有两种模式可选。&lt;code&gt;url&lt;/code&gt; 显示当前文章链接生成的二维码；&lt;code&gt;image&lt;/code&gt; 显示固定的二维码图片（如小程序码等）。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;image&lt;/code&gt;: 选择 &lt;code&gt;image&lt;/code&gt; 模式时需要指定图片链接。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;深色模式&#34;&gt;&lt;a href=&#34;#深色模式&#34; class=&#34;headerlink&#34; title=&#34;深色模式&#34;&gt;&lt;/a&gt;深色模式&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;color_mode&lt;/code&gt; 用来配置 &lt;strong&gt;深色模式&lt;/strong&gt;。开启后主题会根据设备系统自动切换颜色模式，用户也可以点击 &lt;strong&gt;导航栏&lt;/strong&gt; 左侧的图标手动切换颜色模式，系统会暂存用户选择状态。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Color Mode&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;color_mode:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 深色模式。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;深色模式&lt;/em&gt; &amp;#x2F; &lt;em&gt;浅色模式&lt;/em&gt; 的颜色可以参考 &lt;a href=&#34;#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2&#34;&gt;主题颜色&lt;/a&gt; 设置。&lt;/p&gt;
-&lt;h3 id=&#34;哀悼模式&#34;&gt;&lt;a href=&#34;#哀悼模式&#34; class=&#34;headerlink&#34; title=&#34;哀悼模式&#34;&gt;&lt;/a&gt;哀悼模式&lt;/h3&gt;&lt;p&gt;在举国默哀的日子，我们可以将博客灰化，通过配置项 &lt;code&gt;gray&lt;/code&gt; 设置。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Gray (Mourning Mode)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;gray:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#开启哀悼模式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 哀悼模式。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20201016102727.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;哀悼&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;文章配置&#34;&gt;&lt;a href=&#34;#文章配置&#34; class=&#34;headerlink&#34; title=&#34;文章配置&#34;&gt;&lt;/a&gt;文章配置&lt;/h2&gt;&lt;h3 id=&#34;文章封面&#34;&gt;&lt;a href=&#34;#文章封面&#34; class=&#34;headerlink&#34; title=&#34;文章封面&#34;&gt;&lt;/a&gt;文章封面&lt;/h3&gt;&lt;h4 id=&#34;单独封面&#34;&gt;&lt;a href=&#34;#单独封面&#34; class=&#34;headerlink&#34; title=&#34;单独封面&#34;&gt;&lt;/a&gt;单独封面&lt;/h4&gt;&lt;p&gt;可以为每篇文章设置单独的文章封面图片，在文章 &lt;code&gt;Front-matter&lt;/code&gt; 中添加 &lt;code&gt;image&lt;/code&gt; 字段设置图片。&lt;/p&gt;
-&lt;p&gt;若使用图床，直接添加图片文件的 &lt;strong&gt;完整URL&lt;/strong&gt; 即可：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: zhaoo - 主题文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;image: https://pic.izhaoo.com/20200421200902.jpg  #设置图床图片&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;若将图片储存在本地，现将图片文件复制到主题 &lt;code&gt;~/zhaoo/source/images&lt;/code&gt; 下，再添加 &lt;strong&gt;相对URL&lt;/strong&gt; 即可：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: zhaoo - 主题使用文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;image: /images/20200421200902.jpg  #设置本地图片&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h4 id=&#34;默认封面&#34;&gt;&lt;a href=&#34;#默认封面&#34; class=&#34;headerlink&#34; title=&#34;默认封面&#34;&gt;&lt;/a&gt;默认封面&lt;/h4&gt;&lt;p&gt;配置项 &lt;code&gt;post_image&lt;/code&gt; 设置配置文章默认封面，就不用为每篇文章单独设置封面了：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Post Image&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;post_image:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;random:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;galleries&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# local galleries&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;default:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/theme/post-image.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;random&lt;/code&gt;: 设置随机封面，有 &lt;strong&gt;galleries（相册图库）&lt;/strong&gt; 和 &lt;strong&gt;local（本地图库）&lt;/strong&gt;  两种模式。开启 &lt;a href=&#34;#%E7%9B%B8%E5%86%8C&#34;&gt;相册&lt;/a&gt; 功能后会自动调取相册中的图片；本地图库需要新建 &lt;code&gt;/_data/local_images.json&lt;/code&gt; 文件，填写图片 &lt;code&gt;URL&lt;/code&gt; 列表即可。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;default&lt;/code&gt;: 未设置随机封面时启用 &lt;strong&gt;默认封面&lt;/strong&gt;，填写图片 &lt;code&gt;URL&lt;/code&gt; 即可。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&#34;highlight json&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// local_images.json&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;[&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/2014031601.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/2017071602.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/2017071603.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/2017072104.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/2017072705.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20200421201200.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20200305030152.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20191211065241.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20200228081718.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20191211065844.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20200718151924.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20200718152003.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20200718152045.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20200718152122.jpg&amp;amp;#34;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;https&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;//pic.izhaoo.com/20200718151427.jpg&amp;amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;关键词&#34;&gt;&lt;a href=&#34;#关键词&#34; class=&#34;headerlink&#34; title=&#34;关键词&#34;&gt;&lt;/a&gt;关键词&lt;/h3&gt;&lt;p&gt;在文章 &lt;code&gt;Front-matter&lt;/code&gt; 中添加 &lt;code&gt;keywords&lt;/code&gt; 字段设置关键词：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;title: zhaoo - 主题使用文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;keywords: hexo-theme-zhaoo, hexo, 主题, 使用文档, document&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;配置项 &lt;code&gt;keywords&lt;/code&gt; 为网站设置全局关键词，每个页面都会渲染，文章中无需重复添加：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;keywords:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;hexo-theme-zhaoo,&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;hexo&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;文章尺寸&#34;&gt;&lt;a href=&#34;#文章尺寸&#34; class=&#34;headerlink&#34; title=&#34;文章尺寸&#34;&gt;&lt;/a&gt;文章尺寸&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;post_page_size&lt;/code&gt; 用于设置文章内容主体部分的相关尺寸。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Page Size&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;post_page_size:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;width:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;800px&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;width&lt;/code&gt;: 设置内容宽度。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;tips: 受外部元素的限制，&lt;em&gt;实际尺寸&lt;/em&gt; 由计算后得出，不能保证与 &lt;em&gt;设定尺寸&lt;/em&gt; 完全相等，只能保证接近该尺寸。&lt;/p&gt;
-&lt;h3 id=&#34;图片标注&#34;&gt;&lt;a href=&#34;#图片标注&#34; class=&#34;headerlink&#34; title=&#34;图片标注&#34;&gt;&lt;/a&gt;图片标注&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;caption&lt;/code&gt; 用于设置 &lt;strong&gt;图片标注&lt;/strong&gt;，开启后会在文章图片下方生成标注。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Caption&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;caption:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 图片标注。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;文章目录&#34;&gt;&lt;a href=&#34;#文章目录&#34; class=&#34;headerlink&#34; title=&#34;文章目录&#34;&gt;&lt;/a&gt;文章目录&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;toc&lt;/code&gt; 用于设置 &lt;strong&gt;文章目录&lt;/strong&gt;，开启后会在文章内容右侧生成目录，点击目录可平滑到对应的标题处。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# TOC&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;toc:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;min_depth:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;max_depth:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 文章目录。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;min_depth&lt;/code&gt;:&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;max_depth&lt;/code&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;全局开启 &lt;strong&gt;文章目录&lt;/strong&gt; 后，可以在文章 &lt;code&gt;Front-matter&lt;/code&gt; 中添加 &lt;code&gt;toc&lt;/code&gt; 字段单独控制该文章是否展示文章目录。&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: zhaoo - 主题文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;toc: false # 关闭文章目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;打赏二维码&#34;&gt;&lt;a href=&#34;#打赏二维码&#34; class=&#34;headerlink&#34; title=&#34;打赏二维码&#34;&gt;&lt;/a&gt;打赏二维码&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;donate&lt;/code&gt; 用于设置 &lt;strong&gt;打赏二维码&lt;/strong&gt;，开启后可在文章下方展示二维码，扫一扫请博主喝杯咖啡吧~&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Donate&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;donate:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;alipay:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://pic.izhaoo.com/alipay.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;wechat:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://pic.izhaoo.com/wechat.jpg&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 打赏二维码。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;alipay&lt;/code&gt;: 支付宝收款二维码，填写图片 &lt;code&gt;URL&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;wechat&lt;/code&gt;: 微信收款二维码，填写图片 &lt;code&gt;URL&lt;/code&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;文章版权&#34;&gt;&lt;a href=&#34;#文章版权&#34; class=&#34;headerlink&#34; title=&#34;文章版权&#34;&gt;&lt;/a&gt;文章版权&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;post_copyright&lt;/code&gt; 用于设置 &lt;strong&gt;文章版权&lt;/strong&gt;，开启后可在文章下方展示版权信息。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Copyright&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;post_copyright:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 文章版权信息。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;全局开启 &lt;strong&gt;文章版权&lt;/strong&gt; 后，可以在文章 &lt;code&gt;Front-matter&lt;/code&gt; 中添加 &lt;code&gt;copyright&lt;/code&gt; 字段单独控制该文章是否展示文章版权。&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: zhaoo - 主题文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;copyright: false # 关闭文章版权&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;文章搬运&#34;&gt;&lt;a href=&#34;#文章搬运&#34; class=&#34;headerlink&#34; title=&#34;文章搬运&#34;&gt;&lt;/a&gt;文章搬运&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;carrier&lt;/code&gt; 用于开启 &lt;strong&gt;文章搬运&lt;/strong&gt; 功能，方便博主们全文“借鉴”文章，效果如下：&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200727125519.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;文章搬运&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200727125724.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;弹窗提示&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;前置条件：全局开启 &lt;a href=&#34;#%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83&#34;&gt;文章版权&lt;/a&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Carrier&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;carrier:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;type:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;markdown&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# markdown html text&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 文章搬运。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;type&lt;/code&gt;: 搬运模式，可选择一键复制 &lt;code&gt;markdown&lt;/code&gt;、&lt;code&gt;html&lt;/code&gt;、&lt;code&gt;text&lt;/code&gt; 格式的文章。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&amp;gt; &lt;a href=&#34;http://localhost:4000/2020/07/25/hexo-article-carrier/&#34;&gt;Hexo - 开发文章搬运功能&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;文章置顶&#34;&gt;&lt;a href=&#34;#文章置顶&#34; class=&#34;headerlink&#34; title=&#34;文章置顶&#34;&gt;&lt;/a&gt;文章置顶&lt;/h3&gt;&lt;p&gt;找到 &lt;code&gt;/node_modules/hexo-generator-index/lib/generator.js&lt;/code&gt; 文件，替换成如下代码：&lt;/p&gt;
-&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;use strict&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; pagination = &lt;span class=&#34;built_in&#34;&gt;require&lt;/span&gt;(&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;hexo-pagination&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable language_&#34;&gt;module&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;exports&lt;/span&gt; = &lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;params&#34;&gt;locals&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; config = &lt;span class=&#34;variable language_&#34;&gt;this&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;config&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; posts = locals.&lt;span class=&#34;property&#34;&gt;posts&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  posts.&lt;span class=&#34;property&#34;&gt;data&lt;/span&gt; = posts.&lt;span class=&#34;property&#34;&gt;data&lt;/span&gt;.&lt;span class=&#34;title function_&#34;&gt;sort&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt; (&lt;span class=&#34;params&#34;&gt;a, b&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (a.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt; &amp;amp;amp;&amp;amp;amp; b.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (a.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt; == b.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; b.&lt;span class=&#34;property&#34;&gt;date&lt;/span&gt; - a.&lt;span class=&#34;property&#34;&gt;date&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; b.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt; - a.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (a.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt; &amp;amp;amp;&amp;amp;amp; !b.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; -&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (!a.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt; &amp;amp;amp;&amp;amp;amp; b.&lt;span class=&#34;property&#34;&gt;top&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; b.&lt;span class=&#34;property&#34;&gt;date&lt;/span&gt; - a.&lt;span class=&#34;property&#34;&gt;date&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; paginationDir = config.&lt;span class=&#34;property&#34;&gt;pagination_dir&lt;/span&gt; || &amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;page&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;pagination&lt;/span&gt;(&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;, posts, &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;perPage&lt;/span&gt;: config.&lt;span class=&#34;property&#34;&gt;index_generator&lt;/span&gt;.&lt;span class=&#34;property&#34;&gt;per_page&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;layout&lt;/span&gt;: [&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;index&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;, &amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;archive&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;],&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;format&lt;/span&gt;: paginationDir + &amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;&lt;span class=&#34;regexp&#34;&gt;/%d/&lt;/span&gt;&amp;amp;#&lt;span class=&#34;number&#34;&gt;39&lt;/span&gt;;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;data&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;__index&lt;/span&gt;: &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;在文章的 &lt;code&gt;Front-matter&lt;/code&gt; 中添加 &lt;code&gt;top&lt;/code&gt; 字段，指定数值。数值越大，显示越靠前。&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: zhaoo - 主题使用文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;top: 10  #添加该字段&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;数学公式&#34;&gt;&lt;a href=&#34;#数学公式&#34; class=&#34;headerlink&#34; title=&#34;数学公式&#34;&gt;&lt;/a&gt;数学公式&lt;/h3&gt;&lt;h4 id=&#34;MathJax&#34;&gt;&lt;a href=&#34;#MathJax&#34; class=&#34;headerlink&#34; title=&#34;MathJax&#34;&gt;&lt;/a&gt;MathJax&lt;/h4&gt;&lt;p&gt;&amp;gt; &lt;a href=&#34;https://github.com/ikeq/hexo-filter-mathjax-ssr&#34;&gt;hexo-filter-mathjax-ssr&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;以 &lt;code&gt;svg&lt;/code&gt; 的形式渲染数学公式，兼容性较好，推荐使用。&lt;/p&gt;
-&lt;p&gt;安装 &lt;code&gt;MathJax&lt;/code&gt; 插件依赖：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ npm install hexo-filter-mathjax-ssr --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;开启插件，在 &lt;strong&gt;博客配置&lt;/strong&gt; 下新增：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;mathjax:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;inlineQuote:&lt;/span&gt; [&lt;span class=&#34;string&#34;&gt;&amp;amp;#39;\(&amp;amp;#39;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;\)&amp;amp;#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;blockQuote:&lt;/span&gt; [&lt;span class=&#34;string&#34;&gt;&amp;amp;#39;\&lt;/span&gt;[&lt;span class=&#34;string&#34;&gt;&amp;amp;#39;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;amp;#39;\&lt;/span&gt;]&lt;span class=&#34;string&#34;&gt;&amp;amp;#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h4 id=&#34;KaTex&#34;&gt;&lt;a href=&#34;#KaTex&#34; class=&#34;headerlink&#34; title=&#34;KaTex&#34;&gt;&lt;/a&gt;KaTex&lt;/h4&gt;&lt;p&gt;&amp;gt; &lt;a href=&#34;https://github.com/thcd/hexo-katex&#34;&gt;hexo-katex&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;以 &lt;code&gt;HTML&lt;/code&gt; 标签的形式渲染数学公式，渲染速度较快，语法较简单，但是兼容性不是很好。&lt;/p&gt;
-&lt;p&gt;安装渲染引擎 &lt;code&gt;hexo-renderer-pandoc&lt;/code&gt;：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ npm install hexo-renderer-pandoc --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;安装 &lt;code&gt;KaTex&lt;/code&gt; 插件依赖：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ npm install hexo-katex --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;开启插件，在 &lt;strong&gt;博客配置&lt;/strong&gt; 下新增：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;pandoc:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;mathEngine:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;katex&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;页面配置&#34;&gt;&lt;a href=&#34;#页面配置&#34; class=&#34;headerlink&#34; title=&#34;页面配置&#34;&gt;&lt;/a&gt;页面配置&lt;/h2&gt;&lt;h3 id=&#34;相册页面&#34;&gt;&lt;a href=&#34;#相册页面&#34; class=&#34;headerlink&#34; title=&#34;相册页面&#34;&gt;&lt;/a&gt;相册页面&lt;/h3&gt;&lt;p&gt;&amp;gt; 【瀑布流风格相册】由 &lt;a href=&#34;https://github.com/HelloAny&#34;&gt;AmiKara&lt;/a&gt; 友情贡献~&lt;/p&gt;
-&lt;p&gt;执行以下命令创建相册页面，会在 &lt;code&gt;source&lt;/code&gt; 目录生成 &lt;code&gt;galleries/index.md&lt;/code&gt; 文件：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new page galleries  &lt;span class=&#34;comment&#34;&gt;#创建相册页面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;打开 &lt;code&gt;source/galleries/index.md&lt;/code&gt; 文件，设置 &lt;code&gt;Front-matter&lt;/code&gt; ，开启相册页面：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: 相册&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;layout: &amp;amp;#34;galleries&amp;amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;参考 &lt;a href=&#34;#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95&#34;&gt;导航菜单&lt;/a&gt; 设置相册页面的导航：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;galleries:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/galleries&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;相册&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;配置项 &lt;code&gt;galleries&lt;/code&gt; 用于开启相册功能：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;galleries:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;title:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;相册&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;subtitle:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Galleries&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;type:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;waterfull&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# waterful | grid&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;columns:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;:  &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 相册功能。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;title&lt;/code&gt;: 相册分类页面标题。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;subtitle&lt;/code&gt; 相册分类页面副标题。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;type&lt;/code&gt;: 相册显示风格，有 &lt;em&gt;瀑布流&lt;/em&gt; 和 &lt;em&gt;正方形&lt;/em&gt; 两种形式。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;columns&lt;/code&gt;: 相册列数。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;在 &lt;code&gt;/_data&lt;/code&gt; 目录下新建 &lt;code&gt;galleries.json&lt;/code&gt; 文件，创建相册分类目录及图片内容：&lt;/p&gt;
-&lt;figure class=&#34;highlight json&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;name&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;colorful&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;//相册名称&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;cover&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;//相册封面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;description&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;君未看花时，花与君同寂；君来看花日，花色一时明。&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;//相册介绍&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;photos&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;punctuation&#34;&gt;[&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;//图片内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;punctuation&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;name&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;记事&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;cover&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;description&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;翻开随身携带的记事本，写着许多事都是关于你。&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;photos&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;punctuation&#34;&gt;[&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;span class=&#34;punctuation&#34;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;/images/theme/post-image.jpg&amp;amp;#&lt;span class=&#34;number&#34;&gt;34&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;punctuation&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;punctuation&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;在 &lt;code&gt;/source/galleries/&lt;/code&gt; 目录下 &lt;code&gt;新建文件夹&lt;/code&gt; ，命名需要和 &lt;code&gt;json&lt;/code&gt; 中的 &lt;code&gt;name&lt;/code&gt; 字段对应，例如：&lt;em&gt;colorful&lt;/em&gt;、&lt;em&gt;记事&lt;/em&gt;。 在文件夹下新建 &lt;code&gt;index.md&lt;/code&gt; 文件，内容如下：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: 记事  #名称也需要对应&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;layout: &amp;amp;#34;gallery&amp;amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;步骤可能有点难以理解，最后放几张截图，比较直观：&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200722185650.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;gallery-1&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200722185721.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;gallery-2&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200722185814.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;gallery-3&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200722185829.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;gallery-4&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;也可以参考 &lt;code&gt;/_example/source&lt;/code&gt; 中的相关栗子。&lt;/p&gt;
-&lt;h3 id=&#34;归档页面&#34;&gt;&lt;a href=&#34;#归档页面&#34; class=&#34;headerlink&#34; title=&#34;归档页面&#34;&gt;&lt;/a&gt;归档页面&lt;/h3&gt;&lt;p&gt;参考 &lt;a href=&#34;#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95&#34;&gt;导航菜单&lt;/a&gt; 设置归档页面的导航，系统会按文章创建时间自动归档。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;archives:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/archives&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;归档&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;标签页面&#34;&gt;&lt;a href=&#34;#标签页面&#34; class=&#34;headerlink&#34; title=&#34;标签页面&#34;&gt;&lt;/a&gt;标签页面&lt;/h3&gt;&lt;p&gt;执行以下命令创建标签页面，会在 &lt;code&gt;source&lt;/code&gt; 目录生成 &lt;code&gt;tags/index.md&lt;/code&gt; 文件：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new page tags  &lt;span class=&#34;comment&#34;&gt;#创建标签页面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;打开 &lt;code&gt;source/tags/index.md&lt;/code&gt; 文件，设置 &lt;code&gt;Front-matter&lt;/code&gt; ，开启标签页面：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: 标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;type: &amp;amp;#34;tags&amp;amp;#34;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;layout: &amp;amp;#34;tags&amp;amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;参考 &lt;a href=&#34;#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95&#34;&gt;导航菜单&lt;/a&gt; 设置标签页面的导航：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tags:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/tags&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;标签&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;创建文章时，在文章的 &lt;code&gt;Front-matter&lt;/code&gt; 中使用 &lt;code&gt;tags&lt;/code&gt; 字段添加标签即可：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: zhaoo - 主题使用文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;tags: [Hexo, 主题]  #设置标签&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;分类页面&#34;&gt;&lt;a href=&#34;#分类页面&#34; class=&#34;headerlink&#34; title=&#34;分类页面&#34;&gt;&lt;/a&gt;分类页面&lt;/h3&gt;&lt;p&gt;同标签页面，更改一些关键词即可。&lt;/p&gt;
-&lt;p&gt;执行以下命令创建分类页面，会在 &lt;code&gt;source&lt;/code&gt; 目录生成 &lt;code&gt;categories/index.md&lt;/code&gt; 文件：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new page categories  &lt;span class=&#34;comment&#34;&gt;#创建分类页面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;打开 &lt;code&gt;source/categories/index.md&lt;/code&gt; 文件，设置 &lt;code&gt;Front-matter&lt;/code&gt; ，开启分类页面：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: 标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;type: &amp;amp;#34;categories&amp;amp;#34;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;layout: &amp;amp;#34;categories&amp;amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;参考 &lt;a href=&#34;#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95&#34;&gt;导航菜单&lt;/a&gt; 设置分类页面的导航：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;categories:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/categories&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;分类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;创建文章时，在文章的 &lt;code&gt;Front-matter&lt;/code&gt; 中使用 &lt;code&gt;categories&lt;/code&gt; 字段添加标签即可：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: zhaoo - 主题使用文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;categories:  #设置分类&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; 项目&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;- 博客&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;关于页面&#34;&gt;&lt;a href=&#34;#关于页面&#34; class=&#34;headerlink&#34; title=&#34;关于页面&#34;&gt;&lt;/a&gt;关于页面&lt;/h3&gt;&lt;p&gt;执行以下命令创建关于页面，会在 &lt;code&gt;source&lt;/code&gt; 目录生成 &lt;code&gt;about/index.md&lt;/code&gt; 文件：&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new page about  &lt;span class=&#34;comment&#34;&gt;#创建关于页面&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;打开 &lt;code&gt;source/about/index.md&lt;/code&gt; 文件，设置 &lt;code&gt;Front-matter&lt;/code&gt; ，开启关于页面：&lt;/p&gt;
-&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: 标签&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;type: &amp;amp;#34;about&amp;amp;#34;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;layout: &amp;amp;#34;about&amp;amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;参考 &lt;a href=&#34;#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95&#34;&gt;导航菜单&lt;/a&gt; 设置关于页面的导航：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;menu:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;about:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/about&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;关于&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;在 &lt;code&gt;source/about/index.md&lt;/code&gt; 中编写关于内容，如同写文章一样。&lt;/p&gt;
-&lt;p&gt;tips: 建议在 &lt;strong&gt;关于页面&lt;/strong&gt; 关闭 &lt;em&gt;文章目录&lt;/em&gt; 和 &lt;em&gt;文章版权&lt;/em&gt; 功能，在 &lt;code&gt;Front-matter&lt;/code&gt; 中添加 &lt;code&gt;toc&lt;/code&gt; 和 &lt;code&gt;copyright&lt;/code&gt; 字段都设置为 &lt;code&gt;false&lt;/code&gt; 即可。&lt;/p&gt;
-&lt;h2 id=&#34;插件配置&#34;&gt;&lt;a href=&#34;#插件配置&#34; class=&#34;headerlink&#34; title=&#34;插件配置&#34;&gt;&lt;/a&gt;插件配置&lt;/h2&gt;&lt;h3 id=&#34;评论系统&#34;&gt;&lt;a href=&#34;#评论系统&#34; class=&#34;headerlink&#34; title=&#34;评论系统&#34;&gt;&lt;/a&gt;评论系统&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;comments&lt;/code&gt; 用于配置评论系统，目前支持 &lt;strong&gt;Gitalk&lt;/strong&gt;、&lt;strong&gt;Valine&lt;/strong&gt;、&lt;strong&gt;畅言&lt;/strong&gt; 三种评论系统。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Comment&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;comments:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;type:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;valine&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;button:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;:  &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 评论功能。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;type&lt;/code&gt;: 开启哪种评论系统，需要配置对应的评论系统。（参考下文）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;button&lt;/code&gt;: &lt;em&gt;显示&lt;/em&gt; &amp;#x2F; &lt;em&gt;隐藏&lt;/em&gt; 评论按钮，隐藏按钮后将直接展示评论。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;Gitalk&#34;&gt;&lt;a href=&#34;#Gitalk&#34; class=&#34;headerlink&#34; title=&#34;Gitalk&#34;&gt;&lt;/a&gt;Gitalk&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;Gitalk&lt;/strong&gt; 基于 &lt;code&gt;GitHub&lt;/code&gt; 存储评论内容，优点是支持 &lt;code&gt;GitHub&lt;/code&gt; 直接登录；缺点是需要 &lt;strong&gt;科学上网&lt;/strong&gt; 才能访问，水土不服。&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/2020111982651.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;Gitalk演示&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;首先需要在 &lt;a href=&#34;https://github.com/new&#34;&gt;GitHub&lt;/a&gt; 创建一个仓库，如有 &lt;code&gt;GitHub Pages&lt;/code&gt; 也可以共用一个仓库。&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/202011193006.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;创建仓库&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;接着创建一个 &lt;a href=&#34;https://github.com/settings/applications/new&#34;&gt;Github Application&lt;/a&gt;，填写相应的参数。创建完成后会生成 &lt;code&gt;clientID&lt;/code&gt; 和 &lt;code&gt;clientSecret&lt;/code&gt;，记录一下。&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20201119203435.png&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;创建应用&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;配置项 &lt;code&gt;gitalk&lt;/code&gt; 用于配置 &lt;code&gt;Gitalk。&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Gitalk&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;gitalk:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;owner:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;repo:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;admin:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;clientID:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;clientSecret:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;owner&lt;/code&gt;: &lt;code&gt;GitHub&lt;/code&gt; 的用户名。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;repo&lt;/code&gt;: 创建的仓库名称。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;admin&lt;/code&gt;: &lt;code&gt;GitHub&lt;/code&gt; 的用户名。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;clientID&lt;/code&gt;: 应用创建后生成。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;clientSecret&lt;/code&gt;: 应用创建后生成。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;Valine&#34;&gt;&lt;a href=&#34;#Valine&#34; class=&#34;headerlink&#34; title=&#34;Valine&#34;&gt;&lt;/a&gt;Valine&lt;/h4&gt;&lt;p&gt;&lt;code&gt;Valine&lt;/code&gt; 是基于 &lt;a href=&#34;https://leancloud.cn/&#34;&gt;LeanCloud&lt;/a&gt; 实现的评论系统，小清新风格。&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/2020111980022.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;Valine演示&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;首先在 &lt;a href=&#34;https://leancloud.cn/&#34;&gt;LeanCloud&lt;/a&gt; 注册一个账号，并创建一个应用（开发版）。&lt;/p&gt;
-&lt;p&gt;进入应用管理界面，点击【存储】-&amp;gt;【创建Class】，名称为 &lt;strong&gt;Comment&lt;/strong&gt;，访问权限为 &lt;strong&gt;所有用户&lt;/strong&gt;，写入权限为 &lt;strong&gt;限制写入&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;在【设置】-&amp;gt;【应用Keys】中复制 &lt;code&gt;appId&lt;/code&gt; 和 &lt;code&gt;appKey&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;配置项 &lt;code&gt;valine&lt;/code&gt; 用于设置 &lt;code&gt;Valine&lt;/code&gt; 评论系统。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Valine&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;valine:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appId:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appKey:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;placeholder:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;雁过留痕&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;avatar:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;mp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;pageSize:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;lang:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;zh-CN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; &lt;code&gt;Valine&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;appId&lt;/code&gt;: 填入刚才得到的 &lt;code&gt;appId&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;appKey&lt;/code&gt;: 填入刚才得到的 &lt;code&gt;appKey&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;placeholder&lt;/code&gt;: 未输入评论时的占位文字。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mp&lt;/code&gt;: 默认头像，参考 &lt;a href=&#34;https://valine.js.org/avatar.html&#34;&gt;Valine头像设置&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pageSize&lt;/code&gt;: 每页评论数量。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lang&lt;/code&gt;: 系统语言。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&amp;gt; &lt;a href=&#34;https://valine.js.org/&#34;&gt;Valine&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;畅言&#34;&gt;&lt;a href=&#34;#畅言&#34; class=&#34;headerlink&#34; title=&#34;畅言&#34;&gt;&lt;/a&gt;畅言&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;畅言&lt;/strong&gt; 是搜狐家的评论系统，优点是支持 &lt;code&gt;QQ&lt;/code&gt;、&lt;code&gt;手机&lt;/code&gt;、&lt;code&gt;邮箱&lt;/code&gt; 等多种登录方式，接地气；个人感觉 &lt;code&gt;UI&lt;/code&gt; 不是我的菜。 &lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/2020111984224.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;畅言演示&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;在 &lt;a href=&#34;http://changyan.kuaizhan.com/&#34;&gt;畅言&lt;/a&gt; 注册账号，进入后台创建一个站点，在【后台总览】记录一下 &lt;code&gt;APP ID&lt;/code&gt; 和 &lt;code&gt;APP KEY&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;配置项 &lt;code&gt;changyan&lt;/code&gt; 用于设置 &lt;code&gt;畅言评论&lt;/code&gt;。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# ChangYan&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;changyan:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appId:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;conf:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;appId&lt;/code&gt;: 生成的 &lt;code&gt;APP ID&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;conf&lt;/code&gt;: 生成的 &lt;code&gt;APP KEY&lt;/code&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;畅言的相关配置在【管理后台】设置，可参考官方文档进行配置。&lt;/p&gt;
-&lt;h3 id=&#34;客户沟通-DaoVoice&#34;&gt;&lt;a href=&#34;#客户沟通-DaoVoice&#34; class=&#34;headerlink&#34; title=&#34;客户沟通 (DaoVoice)&#34;&gt;&lt;/a&gt;客户沟通 (DaoVoice)&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;http://www.daovoice.io/&#34;&gt;DaoVoice&lt;/a&gt; 是一款客户沟通插件，支持即时通讯、留言等形式反馈消息。&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200808141245.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;DaoVoice演示&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;因为官方的 &lt;code&gt;Fab&lt;/code&gt; 按钮 和 主题 &lt;code&gt;Fab&lt;/code&gt; 按钮会重叠，所以作者同学把他集成到主题 &lt;code&gt;Fab&lt;/code&gt; 中了。&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200808141349.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;官网Fab&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200808141304.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;主题Fab&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;首先在 &lt;a href=&#34;http://dashboard.daovoice.io/&#34;&gt;DaoVoice&lt;/a&gt; 官网上注册一个账号。&lt;/p&gt;
-&lt;p&gt;在【安装应用】页面，复制 &lt;code&gt;app_id&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/20200808135815.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;appid&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;配置项 &lt;code&gt;daovoice&lt;/code&gt; 配置应用。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Daovoice&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;daovoice:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appId:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;abcdefg&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#你的 app_id&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; DaoVoice。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;appId&lt;/code&gt;: 填写之前复制的 &lt;code&gt;app_id&lt;/code&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;点击 &lt;code&gt;Fab&lt;/code&gt; 中的 &lt;strong&gt;消息图标&lt;/strong&gt; 即可打开。&lt;/p&gt;
-&lt;h3 id=&#34;意见反馈平台-腾讯兔小巢&#34;&gt;&lt;a href=&#34;#意见反馈平台-腾讯兔小巢&#34; class=&#34;headerlink&#34; title=&#34;意见反馈平台 (腾讯兔小巢)&#34;&gt;&lt;/a&gt;意见反馈平台 (腾讯兔小巢)&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://txc.qq.com/&#34;&gt;腾讯兔小巢&lt;/a&gt; 是一款用户意见反馈平台。&lt;/p&gt;
-&lt;p&gt;首先在 &lt;a href=&#34;https://txc.qq.com/&#34;&gt;腾讯兔小巢&lt;/a&gt; 官网上注册一个产品，在 &lt;a href=&#34;https://txc.qq.com/dashboard/products/&#34;&gt;产品设置&lt;/a&gt; 中复制 &lt;code&gt;ID&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;配置项 &lt;code&gt;tencentChao&lt;/code&gt; 用于配置兔小巢。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Tencent Chao&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;tencentChao:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appId:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# app_id&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;:  &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 兔小巢。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;appId&lt;/code&gt;: 填写之前复制的 &lt;code&gt;ID&lt;/code&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;页面统计-LeanCloud&#34;&gt;&lt;a href=&#34;#页面统计-LeanCloud&#34; class=&#34;headerlink&#34; title=&#34;页面统计 (LeanCloud)&#34;&gt;&lt;/a&gt;页面统计 (LeanCloud)&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;LeanCloud&lt;/strong&gt; 是一款 &lt;code&gt;ServerLess&lt;/code&gt; 服务，主题中被用来统计每个页面的访问量，并在页面中展示。&lt;/p&gt;
-&lt;p&gt;首先在 &lt;a href=&#34;https://leancloud.cn/&#34;&gt;LeanCloud&lt;/a&gt; 注册一个账号，并创建一个应用（开发版）。&lt;/p&gt;
-&lt;p&gt;进入应用管理界面，点击【存储】-&amp;gt;【创建Class】，名称为 &lt;strong&gt;Counter&lt;/strong&gt;，访问权限为 &lt;strong&gt;所有用户&lt;/strong&gt;，写入权限为 &lt;strong&gt;限制写入&lt;/strong&gt;，如下：&lt;/p&gt;
-&lt;p&gt;&lt;img  src=&#34;https://pic.izhaoo.com/202011194911.jpg&#34;  &gt;&lt;span class=&#34;image-caption&#34;&gt;创建LeanCloud&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;在【设置】-&amp;gt;【应用Keys】中复制 &lt;code&gt;appId&lt;/code&gt; 和 &lt;code&gt;appKey&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;配置项 &lt;code&gt;leancloud&lt;/code&gt; 用于设置 &lt;code&gt;LeanCloud&lt;/code&gt;。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# LeanCloud&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;leancloud:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appId:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;appKey:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;serverURLs:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://leancloud.cn/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; &lt;code&gt;LeanCloud&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;appId&lt;/code&gt;: 填入刚才得到的 &lt;code&gt;appId&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;appKey&lt;/code&gt;: 填入刚才得到的 &lt;code&gt;appKey&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;serverURLs&lt;/code&gt;: 服务路径不用改，保持 &lt;code&gt;https://leancloud.cn/&lt;/code&gt; 就可以了。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;图片懒加载-LazyLoad&#34;&gt;&lt;a href=&#34;#图片懒加载-LazyLoad&#34; class=&#34;headerlink&#34; title=&#34;图片懒加载 (LazyLoad)&#34;&gt;&lt;/a&gt;图片懒加载 (LazyLoad)&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;lazyload&lt;/code&gt; 用于配置图片懒加载。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Lazyload&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;lazyload:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;only_post:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;loading:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/theme/loading.gif&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 图片懒加载。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;onlyPost&lt;/code&gt;: 只对对文章中的图片开启懒加载功能。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;loading&lt;/code&gt;: 加载动画，默认是开启 &lt;code&gt;placeholder（占位图）&lt;/code&gt; 的，可以在网上下载喜欢的动图，填写 &lt;code&gt;图片URL&lt;/code&gt; 即可。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;图片灯箱-FancyBox&#34;&gt;&lt;a href=&#34;#图片灯箱-FancyBox&#34; class=&#34;headerlink&#34; title=&#34;图片灯箱 (FancyBox)&#34;&gt;&lt;/a&gt;图片灯箱 (FancyBox)&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;FancyBox&lt;/code&gt; 用于设置图片灯箱效果，开启后点击文章中的图片会以幻灯片的形式播放。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;fancybox:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;无刷新加载-PJAX&#34;&gt;&lt;a href=&#34;#无刷新加载-PJAX&#34; class=&#34;headerlink&#34; title=&#34;无刷新加载 (PJAX)&#34;&gt;&lt;/a&gt;无刷新加载 (PJAX)&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;pjax&lt;/code&gt; 用于设置无刷新加载，开启后让你的博客嗖嗖嗖~&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;pjax:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;tips: 该功能暂时不稳定，会引起一些特效、功能的异常，暂时不建议开启。&lt;/p&gt;
-&lt;h3 id=&#34;代码高亮-HighLight&#34;&gt;&lt;a href=&#34;#代码高亮-HighLight&#34; class=&#34;headerlink&#34; title=&#34;代码高亮 (HighLight)&#34;&gt;&lt;/a&gt;代码高亮 (HighLight)&lt;/h3&gt;&lt;p&gt;在 &lt;strong&gt;博客配置&lt;/strong&gt; 中开启代码高亮效果：&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;highlight:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#启用代码高亮效果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;line_number:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;auto_detect:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;hljs:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tab_replace:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;配置项 &lt;code&gt;highlight&lt;/code&gt; 用于设置代码高亮效果。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# HighLight&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;highlight:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;style:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# https://highlightjs.org/static/demo/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;light:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Xcode&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;dark:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Solarized&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Dark&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;: &lt;em&gt;开启&lt;/em&gt; &amp;#x2F; &lt;em&gt;关闭&lt;/em&gt; 代码高亮。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;style -&amp;amp;gt; light&lt;/code&gt;: &lt;em&gt;浅色模式&lt;/em&gt; 时的高亮样式。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;style -&amp;amp;gt; dark&lt;/code&gt;: &lt;em&gt;深色模式&lt;/em&gt; 时的高亮样式。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;可以到 &lt;a href=&#34;https://highlightjs.org/static/demo/&#34;&gt;官网&lt;/a&gt; 预览高亮效果，填写样式名称即可。&lt;/p&gt;
-&lt;h3 id=&#34;SEO&#34;&gt;&lt;a href=&#34;#SEO&#34; class=&#34;headerlink&#34; title=&#34;SEO&#34;&gt;&lt;/a&gt;SEO&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;seo&lt;/code&gt; 用于设置 SEO（网站关键词优化）功能。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# SEO&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;seo:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;baidu_auto_push:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;baidu_auto_push&lt;/code&gt;: 开启 &lt;a href=&#34;https://ziyuan.baidu.com/linksubmit/index&#34;&gt;百度站长平台&lt;/a&gt; 链接自动推送功能。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;网页统计&#34;&gt;&lt;a href=&#34;#网页统计&#34; class=&#34;headerlink&#34; title=&#34;网页统计&#34;&gt;&lt;/a&gt;网页统计&lt;/h3&gt;&lt;p&gt;配置项 &lt;code&gt;analytics&lt;/code&gt; 用于设置网站统计。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Analytics&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;analytics:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;baidu:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# id&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;google:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# id&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;tencent:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# id&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;cnzz:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# id&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;baidu&lt;/code&gt;: &lt;a href=&#34;https://tongji.baidu.com/web/welcome/login&#34;&gt;百度统计&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;google&lt;/code&gt;: &lt;a href=&#34;https://analytics.google.com/analytics/web&#34;&gt;谷歌统计&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tencent&lt;/code&gt;: &lt;a href=&#34;https://ta.qq.com/#/&#34;&gt;腾讯分析&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cnzz&lt;/code&gt;: &lt;a href=&#34;https://www.umeng.com/web&#34;&gt;友盟统计&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;在对应的数据统计官网注册网站应用，复制对应的 &lt;code&gt;id&lt;/code&gt; 填写即可。&lt;/p&gt;
-&lt;h2 id=&#34;脚本配置&#34;&gt;&lt;a href=&#34;#脚本配置&#34; class=&#34;headerlink&#34; title=&#34;脚本配置&#34;&gt;&lt;/a&gt;脚本配置&lt;/h2&gt;&lt;h3 id=&#34;CDN&#34;&gt;&lt;a href=&#34;#CDN&#34; class=&#34;headerlink&#34; title=&#34;CDN&#34;&gt;&lt;/a&gt;CDN&lt;/h3&gt;&lt;p&gt;对于外部静态文件（CSS 或 JS），可以使用第三方 &lt;code&gt;CDN&lt;/code&gt; 库进行优化加速。&lt;/p&gt;
-&lt;p&gt;配置项 &lt;code&gt;vendors&lt;/code&gt; 用于设置静态库引入位置，直接输入 &lt;code&gt;URL&lt;/code&gt; 即可。您可以保持默认配置（BootCDN）,留空则从本地引入。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;vendors:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;jquery_js:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;fancybox_js:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;pjax_js:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;lazyload_js:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;fancybox_css:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;highlight_css:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;iconfont_css:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;//at.alicdn.com/t/font_1445822_58xq2j9v1id.css&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;脚本埋点&#34;&gt;&lt;a href=&#34;#脚本埋点&#34; class=&#34;headerlink&#34; title=&#34;脚本埋点&#34;&gt;&lt;/a&gt;脚本埋点&lt;/h3&gt;&lt;p&gt;有时候我们需要埋入一些第三方脚本，例如 &lt;code&gt;百度统计&lt;/code&gt;、&lt;code&gt;百度SEO&lt;/code&gt; 等，主题在 &lt;strong&gt;头部&lt;/strong&gt; 和 &lt;strong&gt;尾部&lt;/strong&gt; 分别开放了埋点入口，通过配置项 &lt;code&gt;custom&lt;/code&gt; 进行配置。&lt;/p&gt;
-&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Custom&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;custom:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;head:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;foot:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;css:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;js:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;head&lt;/code&gt;: 引入头部的代码。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;foot&lt;/code&gt;: 引入尾部的代码。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;css&lt;/code&gt;: 外部引入的 &lt;code&gt;CSS&lt;/code&gt; 链接。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;js&lt;/code&gt;: 外部引入的 &lt;code&gt;JS&lt;/code&gt; 链接。” class&amp;#x3D;”j-carrier-data carrier-data”&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
-" class="j-carrier-data carrier-data">
-  
-</ul>
-        
-        
-          <section class="donate">
-  <div id="qrcode-donate">
-    <img   class="lazyload" data-original="https://pic.izhaoo.com/alipay.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" >
-  </div>
-  <div class="icon">
-    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
-    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
-  </div>
-</section>
-        
-        
-  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%BB%E9%A2%98/" rel="tag">主题</a></li></ul> 
-
-        
-  <nav class="nav">
-    <a href="/2021/11/17/webpack%E5%AD%A6%E4%B9%A0/"><i class="iconfont iconleft"></i>webpack学习</a>
-    <a></a>
-  </nav>
-
-      </section>
-      
-    </section>
-  </div>
-</article></div>
-      <div class="col-xl-3">
-        
-          
-  <aside class="toc-wrap">
-    <h3 class="toc-title">文章目录：</h3>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%96%87%E6%A1%A3"><span class="toc-text">关于文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"><span class="toc-text">快速开始</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85"><span class="toc-text">主题安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E4%B8%BB%E9%A2%98"><span class="toc-text">开启主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE"><span class="toc-text">博客配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0"><span class="toc-text">主题更新</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE"><span class="toc-text">全局配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%B4%E9%83%A8%E5%AF%BC%E8%88%AA-NavBar"><span class="toc-text">头部导航 (NavBar)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95-Menu"><span class="toc-text">导航菜单 (Menu)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E9%A2%9C%E8%89%B2"><span class="toc-text">主题颜色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%99%E7%82%B9%E5%9B%BE%E6%A0%87"><span class="toc-text">站点图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E5%AD%97%E4%BD%93"><span class="toc-text">全局字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="toc-text">背景图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB-Loading"><span class="toc-text">加载动画 (Loading)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AC%A2%E8%BF%8E%E9%A1%B5%E9%9D%A2"><span class="toc-text">欢迎页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E6%90%9C%E7%B4%A2"><span class="toc-text">全局搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF"><span class="toc-text">版权信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="toc-text">社交链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%B3%E4%B8%8B%E8%A7%92%E6%8C%89%E9%92%AE-Fab"><span class="toc-text">右下角按钮 (Fab)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E7%A0%81"><span class="toc-text">二维码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B1%E8%89%B2%E6%A8%A1%E5%BC%8F"><span class="toc-text">深色模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%80%E6%82%BC%E6%A8%A1%E5%BC%8F"><span class="toc-text">哀悼模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E9%85%8D%E7%BD%AE"><span class="toc-text">文章配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2"><span class="toc-text">文章封面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E8%AF%8D"><span class="toc-text">关键词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E5%B0%BA%E5%AF%B8"><span class="toc-text">文章尺寸</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%A0%87%E6%B3%A8"><span class="toc-text">图片标注</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95"><span class="toc-text">文章目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%93%E8%B5%8F%E4%BA%8C%E7%BB%B4%E7%A0%81"><span class="toc-text">打赏二维码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83"><span class="toc-text">文章版权</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%90%AC%E8%BF%90"><span class="toc-text">文章搬运</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6"><span class="toc-text">文章置顶</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-text">数学公式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE"><span class="toc-text">页面配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%86%8C%E9%A1%B5%E9%9D%A2"><span class="toc-text">相册页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%92%E6%A1%A3%E9%A1%B5%E9%9D%A2"><span class="toc-text">归档页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E9%A1%B5%E9%9D%A2"><span class="toc-text">标签页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2"><span class="toc-text">分类页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2"><span class="toc-text">关于页面</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="toc-text">插件配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="toc-text">评论系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E6%B2%9F%E9%80%9A-DaoVoice"><span class="toc-text">客户沟通 (DaoVoice)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%84%8F%E8%A7%81%E5%8F%8D%E9%A6%88%E5%B9%B3%E5%8F%B0-%E8%85%BE%E8%AE%AF%E5%85%94%E5%B0%8F%E5%B7%A2"><span class="toc-text">意见反馈平台 (腾讯兔小巢)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E7%BB%9F%E8%AE%A1-LeanCloud"><span class="toc-text">页面统计 (LeanCloud)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD-LazyLoad"><span class="toc-text">图片懒加载 (LazyLoad)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E7%81%AF%E7%AE%B1-FancyBox"><span class="toc-text">图片灯箱 (FancyBox)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E5%88%B7%E6%96%B0%E5%8A%A0%E8%BD%BD-PJAX"><span class="toc-text">无刷新加载 (PJAX)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE-HighLight"><span class="toc-text">代码高亮 (HighLight)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SEO"><span class="toc-text">SEO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E7%BB%9F%E8%AE%A1"><span class="toc-text">网页统计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E9%85%8D%E7%BD%AE"><span class="toc-text">脚本配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CDN"><span class="toc-text">CDN</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E5%9F%8B%E7%82%B9"><span class="toc-text">脚本埋点</span></a></li></ol></li></ol>
-  </aside>
-
-        
-      </div>
     </div>
-  </div>
-</main>
-  
+</div>
+<style>
+    #noneimg img {
+        display: none;
+        z-index: 109;
+        width: 600px !important;
+        border-radius: 0px;
+        position: fixed;
+        box-shadow: 0 0 0px #c3c3c300 !important;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto !important;
+    }
 
-<footer class="footer">
-  <div class="footer-social"><a 
-        href="tencent://message/?Menu=yes&uin=894519210 "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#12B7F5'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconQQ "></i>
-      </a><a 
-        href="javascript:; "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#09BB07'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconwechat-fill "></i>
-      </a><a 
-        href="https://www.instagram.com/izhaoo/ "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#DA2E76'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconinstagram "></i>
-      </a><a 
-        href="https://github.com/zhaoo "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#9f7be1'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  icongithub-fill "></i>
-      </a><a 
-        href="mailto:izhaoo@163.com "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color=#FF3B00" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconmail"></i>
-      </a></div>
-  
-    <div class="footer-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
-  
-</footer>
-  
-      <div class="fab fab-plus">
-    <i class="iconfont iconplus"></i>
-  </div>
-  
-  
-  
-  <div class="fab fab-up">
-    <i class="iconfont iconcaret-up"></i>
-  </div>
-  
-  
-  
+    @media screen and (max-width:600px) {
+        #noneimg img {
+            width: 88%
+        }
+    }
+</style>
+<script>
+    $(function () { $('#article').click(function (e) { if (e.target.tagName == "IMG") { if ($('#nonediv').length == 0) { let MImg = `<div id='noneimg'><img src='${e.target.currentSrc}'></div>`; let MDiv = "<div id='nonediv' style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'></div>"; $('#article').append(MDiv); $('#article').append(MImg); $("#nonediv").fadeIn("slow"); $("#noneimg img").fadeIn("slow") } } else { if ($('#nonediv').length !== 0) { $("#noneimg ").fadeOut("slow"); $("#nonediv").fadeOut("slow"); setTimeout(function () { $('#nonediv').remove(); $('#noneimg').remove() }, 500) } } }); $('.article-content').addClass('content-move') });
+</script>
+<div class="Last-Next">
     
-<script src="/js/color-mode.js"></script>
+    <a href="/2021/11/17/webpack%E5%AD%A6%E4%B9%A0/">
+        <div class="last">
+            <span>上一篇</span>
+            <p>webpack学习</p>
+        </div>
+    </a>
+    
 
-  
-  
-</body>
+    
+</div>
+		
+<link rel="stylesheet" href="/css/food.css">
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<div class="footer">
+	<div class="Copyright">
+		©2022 By YUCHENG.
+	</div>
+	<div class="contact">
+		
+		<a target="_blank" rel="noopener" href="https://www.2021chengdu.com/cn/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static/image/dyh/officialLogo.JPG">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://www.gochengdu.cn/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static/image/dyh/gochengdu/logo.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://storybook.js.org/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/storybook.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://stackblitz.com/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/stackblitz.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://code.fun/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/codeFun.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://codepen.io/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/codepen.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://caniuse.com/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/caniuse.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://bit.dev/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/bitDev.png">
+		</a>
+		
+	</div>
+</div>
 
-
-
-
-
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
-
-
-
-
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-
-
-
-
-
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
-
-
-
-
-<script src="/js/utils.js"></script>
-<script src="/js/script.js"></script>
-
-
-
-
-
-
-
-  <script>
-    (function () {
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      } else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-
-
-
+<script src="/js/jquery.min.js"></script>
 
 
+<script src="/js/gotop.js"></script>
 
 
+<style type="text/css">
+    @media screen and (min-width: 600px) {
+        .goTop>span {
+            display: block;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            cursor: pointer;
+            opacity: 0.8;
+            background: rgba(18, 24, 58, 0.06);
+            text-align: center;
+            border: 1px solid rgba(18, 24, 58, 0.06);
+
+            transition: border .5s;
+            -moz-transition: border .5s;
+            /* Firefox 4 */
+            -webkit-transition: border .5s;
+            /* Safari 和 Chrome */
+            -o-transition: border .5s;
+            /* Opera */
+        }
+
+        .goTop>span:hover {
+            border: 1px solid #6680B3;
+        }
 
 
+        .goTop {
+            position: fixed;
+            right: 30px;
+            bottom: 80px;
+        }
 
+        .goTop>span>svg {
+            width: 30px;
+            height: 30px;
+            margin-top: 17.5px;
+            opacity: 0.7;
+        }
 
+    }
 
+    @media screen and (max-width: 600px) {
+        .goTop {
+            display: none;
+        }
+    }
+</style>
+<div class="goTop" id="js-go_top">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
+            </g>
+        </svg>
+    </span>
+</div>
+<script>
+    $('#js-go_top').gotoTop({ offset: 500, speed: 300, animationShow: { 'transform': 'translate(0,0)', 'transition': 'transform .5s ease-in-out' }, animationHide: { 'transform': 'translate(100px,0)', 'transition': 'transform .5s ease-in-out' } });
+</script>
+
+	</body>
 
 </html>

@@ -1,333 +1,403 @@
-
-
 <!DOCTYPE html>
-<html lang="en" color-mode=light>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>主题 - 只是一个博客</title>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="google" content="notranslate" />
-  
-  <meta name="description" content="记录">
-  <meta name="author" content="Yu Xiong">
-  <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
-  <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" sizes="180x180">
-  <meta rel="mask-icon" href="/images/icons/stun-logo.svg" color="#333333">
-  
-    <meta rel="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
-    <meta rel="msapplication-TileColor" content="#000000">
-  
+<html>
 
-  
-<link rel="stylesheet" href="/css/style.css">
+	<head>
+		
+<title>标签:主题-Yc</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico">
+
+<meta name="keywords" content="IT,前端,程序员,yucheng,余成">
+<meta name="description" content="个人技术博客">
 
 
-  
-    
-<link rel="stylesheet" href="https://at.alicdn.com/t/font_1445822_p6ry5n7lrr.css">
+<script src="/js/jquery.min.js"></script>
 
-  
 
-  
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<meta name="generator" content="Hexo 6.1.0"></head>
 
-  
+	<body>
+		
+<link rel="stylesheet" href="/css/tag.css">
 
-  
-    
-      
+
+<link rel="stylesheet" href="/css/header.css">
+
+	<div class="header">
+		<div class="header-top">
+			<div class="h-left">
+				<a href="/">
+					<img src="/image/logo.png">
+				</a>
+			</div>
+			<div class="h-right">
+				<ul>
+					
+						
+								<li>
+									<a href="/">
+										HOME
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/archives">
+										ARCHIVE
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/categories">
+										CATEGORIES
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+							<li class="select">
+								<a href="/tags">
+									TAGS
+								</a>
+								<span class="dot"></span>
+							</li>
+							
+									
+						
+								<li>
+									<a href="/links">
+										LINKS
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+						
+								<li>
+									<a href="/about">
+										ABOUT
+									</a>
+									<span class="dot"></span>
+								</li>
+								
+									
+				</ul>
+			</div>
+			<div class="h-right-close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+					<path fill="none" d="M0 0h24v24H0z" />
+					<path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(68,68,68,1)" />
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+    <div class="topo">
+        <h2>YUCHENG</h2>
+    </div>
+    <ul>
         
+        <li>
+            <a href="/">HOME</a>
+        </li>
         
-<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css" name="highlight-style" mode="light">
-
-      
+        <li>
+            <a href="/archives">ARCHIVE</a>
+        </li>
         
+        <li>
+            <a href="/categories">CATEGORIES</a>
+        </li>
         
-<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/solarized-dark.min.css" name="highlight-style" mode="dark">
-
-      
-  
-
-  <script>
-    var CONFIG = window.CONFIG || {};
-    var ZHAOO = window.ZHAOO || {};
-    CONFIG = {
-      isHome: false,
-      fancybox: true,
-      pjax: false,
-      loading: {
-        gif: '/images/theme/loading.gif',
-        lottie: ''
-      },
-      lazyload: {
-        enable: true,
-        only_post: 'false',
-        loading: {
-          gif: '/images/theme/loading.gif',
-          lottie: ''
-        }
-      },
-      donate: {
-        enable: true,
-        alipay: 'https://pic.izhaoo.com/alipay.jpg',
-        wechat: 'https://pic.izhaoo.com/wechat.jpg'
-      },
-      galleries: {
-        enable: true
-      },
-      fab: {
-        enable: true,
-        always_show: false
-      },
-      carrier: {
-        enable: true
-      },
-      daovoice: {
-        enable: false
-      },
-      preview: {
-        background: {
-          default: '',
-          api: ''
-        },
-        motto: {
-          default: '我在开了灯的床头下，想问问自己的心啊。',
-          typing: true,
-          api: 'https://v2.jinrishici.com/one.json',
-          data_contents: '["data","content"]'
-        },
-      },
-      qrcode: {
-        enable: true,
-        type: 'url',
-        image: 'https://pic.izhaoo.com/weapp-code.jpg',
-      },
-      toc: {
-        enable: true
-      },
-      scrollbar: {
-        type: 'default'
-      },
-      notification: {
-        enable: false,
-        delay: 4500,
-        list: '',
-        page_white_list: '',
-        page_black_list: ''
-      },
-      search: {
-        enable: false,
-        path: ''
-      }
+        <li>
+            <a href="/tags">TAGS</a>
+        </li>
+        
+        <li>
+            <a href="/links">LINKS</a>
+        </li>
+        
+        <li>
+            <a href="/about">ABOUT</a>
+        </li>
+        
+    </ul>
+    <div class="my_foot">
+        
+        <a target="_blank" rel="noopener" href="https://www.2021chengdu.com/cn/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static/image/dyh/officialLogo.JPG">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://www.gochengdu.cn/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static/image/dyh/gochengdu/logo.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://storybook.js.org/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/storybook.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://stackblitz.com/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/stackblitz.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://code.fun/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/codeFun.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://codepen.io/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/codepen.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://caniuse.com/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/caniuse.png">
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://bit.dev/">
+            <img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/bitDev.png">
+        </a>
+        
+    </div>
+</div>
+<div class='shelter'
+    style='cursor: pointer;display: none; position: fixed;left: 0;top: 0; right: 0;bottom: 0;background-color: #333;opacity:0.5;z-index: 108;'>
+</div>
+<style>
+    .sidebar {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 999;
+        text-align: center;
+        box-shadow: -6px 0 20px rgba(98, 94, 94, .815)
     }
-  </script>
 
-  
+    .topo {
+        width: 100%;
+        height: 200px;
+        background: url(https://api.ixiaowai.cn/gqapi/gqapi.php) no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end
+    }
 
-  
+    .topo h2 {
+        color: #fff;
+        z-index: 1;
+        position: relative;
+        margin: 0 0 10px 10px;
+        font-size: 1.2em;
+        box-sizing: border-box
+    }
 
-<meta name="generator" content="Hexo 6.1.0"></head>
+    .topo:before {
+        content: '';
+        background-image: url(/image/pattern.png);
+        background-repeat: repeat;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
 
-<body class="lock-screen">
-  <div class="loading" id="loading"></div>
-  
-    
+    .sidebar ul {
+        width: 100%;
+        margin-top: 50px
+    }
 
+    .sidebar ul li {
+        height: 50px;
+        list-style: none;
+        font-size: 1.2em;
+        text-align: right;
+        margin-right: 10px
+    }
 
-  <nav class="navbar">
-    <div class="left">
-      
-        <i class="iconfont iconhome j-navbar-back-home"></i>
-      
-      
-        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
-      
-      
-        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
-      
-      
+    .sidebar ul li a {
+        display: grid;
+        color: #5d606a;
+        text-overflow: ellipsis;
+        width: 100%;
+        text-decoration: none
+    }
+
+    .my_foot {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0
+    }
+
+    .my_foot a {
+        text-decoration: none;
+        margin-right: 10px;
+        display: inline-block
+    }
+
+    .my_foot a img {
+        width: 30px;
+        height: 30px
+    }
+</style>
+
+<script>
+    $(function () { $('.h-right-close>svg').click(function () { $('.sidebar').animate({ width: "66%" }, 500); $('.shelter').fadeIn("slow") }); $('.shelter').click(function (e) { $('.sidebar').animate({ width: "0" }, 500); $('.shelter').fadeOut("slow") }) })
+</script>
+		<script>
+			$(function () { $(window).scroll(function () { if ($(document).scrollTop() > 100) { $(".header-top").removeClass("header-move2"); $('.header-top').addClass('header-move1') } else { $(".header-top").removeClass("header-move1"); $('.header-top').addClass('header-move2') } }) });
+		</script>
+
+<div class="header-bg">
+    <div class="bg-content">
+        <span>
+            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgtags.svg" alt="Q">
+        </span>
+        <h2> 主题 </h2>
     </div>
-    <div class="center">标签</div>
-    <div class="right">
-      <i class="iconfont iconmenu j-navbar-menu"></i>
+</div>
+<div class="article-content">
+    <div id="article" class="content">
+        <div class="list-group">
+            
+            
+            
+            <p class="h5">2020</p>
+            
+            <a href="/2020/05/05/%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/" class="list-group-item list-group-item-action">
+                <span class="archive-post-title">主题配置文档</span>
+                <time style="float: right;">05-05</time>
+            </a>
+            
+        </div>
     </div>
-    
-      <div id="qrcode-navbar"></div>
-    
-  </nav>
+</div>
+<script>$(function () { $('.article-content').addClass('content-move') });</script>
+		
+<link rel="stylesheet" href="/css/food.css">
 
-  
-  
+<div class="footer">
+	<div class="Copyright">
+		©2022 By YUCHENG.
+	</div>
+	<div class="contact">
+		
+		<a target="_blank" rel="noopener" href="https://www.2021chengdu.com/cn/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static/image/dyh/officialLogo.JPG">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://www.gochengdu.cn/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static/image/dyh/gochengdu/logo.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://storybook.js.org/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/storybook.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://stackblitz.com/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/stackblitz.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://code.fun/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/codeFun.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://codepen.io/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/codepen.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://caniuse.com/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/caniuse.png">
+		</a>
+		
+		<a target="_blank" rel="noopener" href="https://bit.dev/">
+			<img src="https://scrm-pic.oss-cn-hangzhou.aliyuncs.com/static_img/images/bitDev.png">
+		</a>
+		
+	</div>
+</div>
 
-<nav class="menu">
-  <div class="menu-container">
-    <div class="menu-close">
-      <i class="iconfont iconbaseline-close-px"></i>
-    </div>
-    <ul class="menu-content"><li class="menu-item">
-        <a href="/ " class="underline "> 首页</a>
-      </li><li class="menu-item">
-        <a href="/galleries/ " class="underline "> 摄影</a>
-      </li><li class="menu-item">
-        <a href="/archives/ " class="underline "> 归档</a>
-      </li><li class="menu-item">
-        <a href="/tags/ " class="underline "> 标签</a>
-      </li><li class="menu-item">
-        <a href="/categories/ " class="underline "> 分类</a>
-      </li><li class="menu-item">
-        <a href="/about/ " class="underline "> 关于</a>
-      </li></ul>
-    
-      <div class="menu-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
-    
-  </div>
-</nav>
-  <main id="main">
-  <section class="archive">
-    <div class="archive-container">
-      <div class="archive-post">
-        <h2 class="archive-total"># 主题</h2>
-        
-        
-          
-            <h3 class="archive-year">2020 年</h3>
-          
-          <div class="archive-item">
-            <a class="archive-date" href="/2020/05/05/%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/">05/05</a>
-            <a class="archive-title" href="/2020/05/05/%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF/">主题配置文档</a>
-          </div>
-        
-      </div>
-    </div>
-  </section>
-</main>
-  
-
-<footer class="footer">
-  <div class="footer-social"><a 
-        href="tencent://message/?Menu=yes&uin=894519210 "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#12B7F5'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconQQ "></i>
-      </a><a 
-        href="javascript:; "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#09BB07'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconwechat-fill "></i>
-      </a><a 
-        href="https://www.instagram.com/izhaoo/ "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#DA2E76'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconinstagram "></i>
-      </a><a 
-        href="https://github.com/zhaoo "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#9f7be1'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  icongithub-fill "></i>
-      </a><a 
-        href="mailto:izhaoo@163.com "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color=#FF3B00" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconmail"></i>
-      </a></div>
-  
-    <div class="footer-copyright"><p>Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
-  
-</footer>
-  
-      <div class="fab fab-plus">
-    <i class="iconfont iconplus"></i>
-  </div>
-  
-  
-  
-  <div class="fab fab-up">
-    <i class="iconfont iconcaret-up"></i>
-  </div>
-  
-  
-  
-    
-<script src="/js/color-mode.js"></script>
-
-  
-  
-</body>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 
 
+<script src="/js/gotop.js"></script>
 
 
+<style type="text/css">
+    @media screen and (min-width: 600px) {
+        .goTop>span {
+            display: block;
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            cursor: pointer;
+            opacity: 0.8;
+            background: rgba(18, 24, 58, 0.06);
+            text-align: center;
+            border: 1px solid rgba(18, 24, 58, 0.06);
 
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+            transition: border .5s;
+            -moz-transition: border .5s;
+            /* Firefox 4 */
+            -webkit-transition: border .5s;
+            /* Safari 和 Chrome */
+            -o-transition: border .5s;
+            /* Opera */
+        }
 
-
-
-
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-
-
-
-
-
-  
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
-
-
-
-
-<script src="/js/utils.js"></script>
-<script src="/js/script.js"></script>
-
-
-
-
+        .goTop>span:hover {
+            border: 1px solid #6680B3;
+        }
 
 
+        .goTop {
+            position: fixed;
+            right: 30px;
+            bottom: 80px;
+        }
 
-  <script>
-    (function () {
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      } else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
+        .goTop>span>svg {
+            width: 30px;
+            height: 30px;
+            margin-top: 17.5px;
+            opacity: 0.7;
+        }
 
+    }
 
+    @media screen and (max-width: 600px) {
+        .goTop {
+            display: none;
+        }
+    }
+</style>
+<div class="goTop" id="js-go_top">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g>
+                <path d="M13 12v8h-2v-8H4l8-8 8 8z"></path>
+            </g>
+        </svg>
+    </span>
+</div>
+<script>
+    $('#js-go_top').gotoTop({ offset: 500, speed: 300, animationShow: { 'transform': 'translate(0,0)', 'transition': 'transform .5s ease-in-out' }, animationHide: { 'transform': 'translate(100px,0)', 'transition': 'transform .5s ease-in-out' } });
+</script>
 
-
-
-
-
-
-
-
-
-
+	</body>
 
 </html>
